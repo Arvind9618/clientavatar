@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Avatar Chat</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background: #000;
+        }
+
+        video#bgVideo {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            z-index: 1;
+        }
+
+        canvas#mouthCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        /* Start Overlay */
+        #startOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        #startBtn {
+            padding: 20px 50px;
+            font-size: 24px;
+            background: #28a745;
+            box-shadow: 0 0 20px rgba(40, 167, 69, 0.5);
+        }
+
+        #startBtn:hover {
+            background: #218838;
+        }
+
+        /* Debug/Alignment Controls */
+        #debugControls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 20;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            width: 300px;
+        }
+
+        #debugControls h3 {
+            margin-top: 0;
+            font-size: 16px;
+        }
+
+        #debugControls label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        #debugControls input {
+            width: 70%;
+            vertical-align: middle;
+        }
+
+        #debugControls span {
+            float: right;
+            font-family: monospace;
+        }
+
+        /* Main Chat Controls */
+        #chatControls {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 90%;
+            max-width: 600px;
+            align-items: center;
+        }
+
+        #inputGroup {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+        }
+
+        input#textInput {
+            flex: 1;
+            padding: 15px;
+            border-radius: 25px;
+            border: none;
+            background: rgba(255, 255, 255, 0.9);
+            font-size: 16px;
+            outline: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 12px 25px;
+            border-radius: 25px;
+            border: none;
+            background: rgba(0, 123, 255, 0.8);
+            backdrop-filter: blur(5px);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background: rgba(0, 123, 255, 1);
+            transform: translateY(-2px);
+        }
+
+        button#micBtn {
+            background: rgba(220, 53, 69, 0.8);
+            width: fit-content;
+            padding: 15px 40px;
+            font-size: 18px;
+        }
+
+        button#micBtn:hover {
+            background: rgba(220, 53, 69, 1);
+        }
+
+        button.recording {
+            animation: pulse 1.5s infinite;
+            background: red !important;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+            }
+        }
+
+        #status {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- MediaPipe Face Mesh -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Start Overlay to enable Audio -->
+        <div id="startOverlay">
+            <h1>AI Avatar Chat</h1>
+            <p>Click below to enable audio and start.</p>
+            <button id="startBtn">Start Experience</button>
+        </div>
+
+        <!-- Video Background -->
+        <video id="bgVideo" src="uploads/idle_talking.mp4" loop muted playsinline></video>
+
+        <!-- 3D Overlay -->
+        <canvas id="mouthCanvas"></canvas>
+
+        <!-- Status & Debug Info -->
+        <div id="status">Ready</div>
+
+        <!-- Debug Controls for Alignment -->
+        <div id="debugControls">
+            <h3>Model Alignment</h3>
+            <label>Scale: <input type="range" id="scaleRange" min="-0.5" max="5" step="0.1" value="1"> <span
+                    id="scaleVal">1</span></label><br>
+            <label>Pos X: <input type="range" id="posXRange" min="-10" max="10" step="0.1" value="0"> <span
+                    id="posXVal">0</span></label><br>
+            <label>Pos Y: <input type="range" id="posYRange" min="-10" max="10" step="0.1" value="-1.5"> <span
+                    id="posYVal">-1.5</span></label><br>
+            <button id="toggleDebug">Toggle Controls</button>
+        </div>
+
+        <!-- Chat Interface -->
+        <div id="chatControls">
+            <div id="inputGroup">
+                <input type="text" id="textInput" placeholder="Type a message...">
+                <button id="sendBtn">Send</button>
+            </div>
+            <button id="micBtn">🎤 Talk</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
