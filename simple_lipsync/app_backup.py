@@ -83,9 +83,13 @@ class FileJobManager:
     def _get_job_dir(self, job_id):
         return os.path.join(self.base_dir, str(job_id))
 
-    def create_job(self, total_sentences):
-        # Generate numeric ID for consistency with user request
-        job_id = str(int(time.time() * 10000))
+    def create_job(self, total_sentences, job_id=None):
+        # Generate numeric ID if not provided
+        if job_id is None:
+            job_id = str(int(time.time() * 10000))
+        else:
+            job_id = str(job_id)
+
         job_dir = self._get_job_dir(job_id)
         os.makedirs(job_dir, exist_ok=True)
         
@@ -279,7 +283,7 @@ def get_text():
     if not query:
         return jsonify({'error': 'No query provided'}), 400
         
-    print(f"DEBUG: /get_text Query: {query}")
+    print(f"DEBUG: /get_text Query: {query} - Payload: {data}")
     
     # LLM Interaction
     try:
@@ -293,16 +297,18 @@ def get_text():
         
         # Start TTS Job
         sentences = split_text_into_sentences(reply_text)
-        job_id = job_manager.create_job(len(sentences))
+        job_id = job_manager.create_job(len(sentences), job_id=data.get('ID'))
         
         t = threading.Thread(target=process_tts_job, args=(job_id, reply_text))
         t.daemon = True
         t.start()
         
+        print(f"DEBUG: /get_text responding with ID: {job_id}")
         return jsonify({
             "ID": str(job_id),
             "text": query,
             "reply": reply_text,
+            "generated_text": reply_text,
             "status": "processing",
             "total_chunks": len(sentences)
         })
@@ -388,7 +394,7 @@ def process_mic():
 def talk():
     data = request.json or {}
     req_id = str(data.get('ID', ''))
-    
+    print(f"DEBUG: /talk - Payload: {data}")
     # Welcome Message Intercept
     if req_id == WELCOME_CONFIG["ID"]:
         print("DEBUG: Request for Welcome Message")
@@ -411,27 +417,42 @@ def talk():
     if not text: return jsonify({'error': 'No text'}), 400
     
     sentences = split_text_into_sentences(text)
-    job_id = job_manager.create_job(len(sentences))
+    # Use the client provided ID or generate one
+    job_id = job_manager.create_job(len(sentences), job_id=data.get('ID'))
     
     t = threading.Thread(target=process_tts_job, args=(job_id, text))
     t.daemon = True
     t.start()
     
+    print(f"DEBUG: /talk responding with ID: {job_id}")
     return jsonify({
         "ID": str(job_id), # Ensure string
         "status": "processing",
         "processed_chunks": 0,
-        "total_chunks": len(sentences)
+        "total_chunks": len(sentences),
+        "reply": text,
+        "generated_text": text
     })
 
 @app.route('/get_chunk', methods=['POST'])
 def get_chunk():
     data = request.json or {}
+    print(f"DEBUG: /get_chunk - Payload: {data}")
     job_id = data.get('ID') or data.get('taskId')
     if not job_id: 
         print(f"ERROR: /get_chunk - No ID in {data}")
         return jsonify({'error': 'No ID'}), 400
     
+    # Handle Welcome Message specifically
+    if str(job_id) == str(WELCOME_CONFIG["ID"]):
+        print("DEBUG: /get_chunk - Request for Welcome Message")
+        status = job_manager.get_job_status(job_id)
+        if not status or status.get('status') != 'completed':
+             ensure_welcome_message()
+             status = job_manager.get_job_status(job_id)
+        if status:
+            return jsonify({"total_chunk": status['total_chunks']})
+
     status = job_manager.get_job_status(job_id)
     if not status: 
         print(f"ERROR: /get_chunk - Job {job_id} not found. Available: {job_manager.list_jobs()}")
@@ -442,18 +463,34 @@ def get_chunk():
 @app.route('/read-file', methods=['POST'])
 def read_file():
     data = request.json or {}
+    print(f"DEBUG: /read-file - Payload: {data}")
     job_id = data.get('ID') or data.get('taskId')
     chunk_idx = data.get('chunk_ID') 
     if chunk_idx is None: chunk_idx = data.get('chunkIdx')
     
-    if not job_id or chunk_idx is None: 
+    if not job_id: 
+        print(f"ERROR: /read-file - No ID in {data}")
+        return jsonify({'error': 'No ID'}), 400
+    
+    # Handle Welcome Message specifically
+    if str(job_id) == str(WELCOME_CONFIG["ID"]):
+        status = job_manager.get_job_status(job_id)
+        if not status or status.get('status') != 'completed':
+             print("DEBUG: /read-file - Triggering Welcome Message generation")
+             ensure_welcome_message()
+    
+    if chunk_idx is None:
         print(f"ERROR: /read-file - Invalid params: {data}")
         return jsonify({'error': 'ID and chunk_ID required'}), 400
-    
+
     chunk = job_manager.get_chunk(job_id, chunk_idx)
     if not chunk: 
         # print((f"DEBUG: /read-file - Chunk {chunk_idx} for Job {job_id} not ready"))
-        return jsonify({'error': 'Chunk not ready'}), 404
+        return jsonify({
+            "audio": "",
+            "taskId": f"{job_id}_{chunk_idx}",
+            "data": []
+        })
     
     return jsonify({
         "audio": chunk['audio'],
