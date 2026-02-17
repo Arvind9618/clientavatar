@@ -1,0 +1,15 @@
+{
+    "positionY": -1.42,
+    "positionX": 0.022,
+    "scale": 0.46,
+    "teethPositionX": 0,
+    "teethPositionY": -0.10,
+    "teethPositionZ": -0.10,
+    "idlestartTime": 0,
+    "idleendTime": 12.09,
+    "talkingstartTime": 0,
+    "talkingendTime": 12.09,
+    "voiceID":"indian_f",
+    "initialFaceVisibility": true
+
+}

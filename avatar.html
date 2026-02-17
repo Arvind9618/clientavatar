@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Avatar</title>
+  <link rel="icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<style>
+  #responsive-div-gia {
+    z-index: 9999;
+    position: fixed;
+    bottom: 0px;
+    /* width: 460px; */
+    left: 50%;
+    transform: translateX(-50%);
+    /* height: 80%; */
+  }
+
+  #background {
+    /* background-image: url("./assets/images/gmr-background.png"); */
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+  }
+
+  #toggleChatbot {
+    position: fixed;
+    bottom: 205px;
+    right: 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    z-index: 1;
+  }
+
+  #toggleChatbot img {
+    width: 50px;
+  }
+
+  @media (max-width: 768px) {
+    #responsive-div-gia {
+      z-index: 9999;
+      position: fixed;
+      bottom: 0px;
+      /* width: 350px; */
+      right: 50%;
+      transform: translateX(50%);
+      /* height: 70%; */
+    }
+
+    #toggleChatbot {
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+</style>
+
+<body>
+  <div id="background" style="width: 100%; height: 100%; position: absolute; left: 0; top: 0">
+
+    <div id="responsive-div-gia">
+      <script src="./Kiksy-setup/script/api-wrapper.js"></script>
+      <avatar-pod avatarID="gia" avatarToken="e85942dd-c437-48a8-bbc7-fa9789686aeb" id="avatar-pod"></avatar-pod>
+      <script src="./Kiksy-setup/script/kiksy-component-gmr.js"></script>
+    </div>
+
+    <script>
+      const newAvatarPod = document.getElementById("avatar-pod");
+
+      newAvatarPod.avatar = {
+        avatarName: "GIA",
+        introMsg: ` I'm your virtual assistant, here to help you with anything you need, feel free to ask your question, and I'll do my best to assist you!`,
+      };
+
+      newAvatarPod.kiksyLLM = {
+        apiKey3: "",
+        assistantId: "webGMR",
+      };
+
+      newAvatarPod.addEventListener('submit-avatar-message', function (event) {
+        const { message } = event.detail;
+        console.log("Message sent:", message);
+      });
+
+      newAvatarPod.embededvideo = true
+
+      // const toggleBtn = document.getElementById('toggleChatbot');
+      // toggleBtn.addEventListener('click', function () {
+      //   const chatbot = document.getElementById('responsive-div-gia');
+      //   if (chatbot.style.display === 'none') {
+      //     chatbot.style.display = 'block';
+      //   } else {
+      //     chatbot.style.display = 'none';
+      //   }
+      // });
+
+      // Disable console logs
+      console.log = function () { };
+      console.warn = function () { };
+      console.error = function () { };
+      console.info = function () { };
+      console.debug = function () { };
+    </script>
+
+</body>
+
+</html>
