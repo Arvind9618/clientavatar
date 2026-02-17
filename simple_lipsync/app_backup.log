@@ -1,0 +1,68 @@
+/home/ubuntu/repo/simple_lipsync/app_backup.py:20: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+✅ Found Rhubarb at: rhubarb
+DEBUG: Welcome message 17707462847981 already validated and ready.
+ * Serving Flask app 'app_backup'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.31.22.72:8000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+/home/ubuntu/repo/simple_lipsync/app_backup.py:20: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+ * Debugger is active!
+ * Debugger PIN: 768-835-232
+205.254.184.223 - - [15/Feb/2026 18:12:26] "POST /get_text HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:12:40] "[36mGET / HTTP/1.1[0m" 304 -
+103.125.163.99 - - [15/Feb/2026 18:12:40] "GET /app.js HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:12:43] "[35m[1mGET /uploads/idle_talking.mp4 HTTP/1.1[0m" 206 -
+103.125.163.99 - - [15/Feb/2026 18:12:43] "GET /uploads/Face.glb HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:12:46] "POST /talk HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:12:47] "POST /read-file HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:13:03] "POST /get_text HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:13:04] "POST /read-file HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:13:06] "POST /read-file HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:13:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+103.125.163.99 - - [15/Feb/2026 18:15:00] "[35m[1mGET /uploads/idle_talking.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [15/Feb/2026 18:15:48] "GET / HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:15:57] "GET / HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:15:57] "GET /app.js HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:15:58] "[35m[1mGET /uploads/idle_talking.mp4 HTTP/1.1[0m" 206 -
+103.125.163.99 - - [15/Feb/2026 18:15:58] "GET /uploads/Face.glb HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:15:59] "[35m[1mGET /uploads/idle_talking.mp4 HTTP/1.1[0m" 206 -
+103.125.163.99 - - [15/Feb/2026 18:16:01] "[35m[1mGET /uploads/idle_talking.mp4 HTTP/1.1[0m" 206 -
+103.125.163.99 - - [15/Feb/2026 18:16:02] "[35m[1mGET /uploads/idle_talking.mp4 HTTP/1.1[0m" 206 -
+103.125.163.99 - - [15/Feb/2026 18:16:07] "POST /talk HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:16:08] "POST /read-file HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:16:08] "[35m[1mGET /uploads/idle_talking.mp4 HTTP/1.1[0m" 206 -
+103.125.163.99 - - [15/Feb/2026 18:16:09] "POST /read-file HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:16:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+103.125.163.99 - - [15/Feb/2026 18:16:25] "[36mGET / HTTP/1.1[0m" 304 -
+103.125.163.99 - - [15/Feb/2026 18:16:27] "GET /app.js HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:16:28] "GET /uploads/Face.glb HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:16:29] "POST /talk HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:16:30] "[35m[1mGET /uploads/idle_talking.mp4 HTTP/1.1[0m" 206 -
+103.125.163.99 - - [15/Feb/2026 18:16:30] "POST /read-file HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:16:39] "POST /read-file HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:16:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+103.125.163.99 - - [15/Feb/2026 18:17:35] "POST /get_text HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:17:36] "POST /read-file HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:17:37] "POST /read-file HTTP/1.1" 200 -
+103.125.163.99 - - [15/Feb/2026 18:22:49] "[35m[1mGET /uploads/idle_talking.mp4 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [15/Feb/2026 18:41:52] "GET / HTTP/1.1" 200 -

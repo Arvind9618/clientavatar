@@ -270,9 +270,30 @@ function setupEventListeners() {
     // Mic Controls
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
-            mediaRecorder = new MediaRecorder(stream);
-            mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
-            mediaRecorder.onstop = sendAudio;
+            // Try to pick a well-supported encoded format (typically Opus in WebM/OGG)
+            let options = {};
+            try {
+                if (window.MediaRecorder && MediaRecorder.isTypeSupported('audio/webm;codecs=opus')) {
+                    options.mimeType = 'audio/webm;codecs=opus';
+                } else if (window.MediaRecorder && MediaRecorder.isTypeSupported('audio/ogg;codecs=opus')) {
+                    options.mimeType = 'audio/ogg;codecs=opus';
+                }
+            } catch (e) {
+                console.warn('MediaRecorder type support check failed:', e);
+            }
+
+            mediaRecorder = new MediaRecorder(stream, options);
+            console.log('MediaRecorder initialized. mimeType =', mediaRecorder.mimeType);
+
+            mediaRecorder.ondataavailable = e => {
+                console.log('MediaRecorder ondataavailable: chunk size =', e.data && e.data.size, 'type =', e.data && e.data.type);
+                audioChunks.push(e.data);
+            };
+
+            mediaRecorder.onstop = () => {
+                console.log('MediaRecorder stopped. Total chunks =', audioChunks.length);
+                sendAudio();
+            };
         }).catch(err => {
             console.error("Mic error:", err);
             statusDiv.textContent = "Mic access denied";
@@ -355,13 +376,50 @@ async function sendText() {
 
 // 3. Audio Chat
 async function sendAudio() {
-    const blob = new Blob(audioChunks, { type: 'audio/wav' });
+    console.log('sendAudio() called. audioChunks length =', audioChunks.length);
+
+    if (!audioChunks || audioChunks.length === 0) {
+        console.warn('sendAudio: No audio chunks captured.');
+        statusDiv.textContent = 'No audio captured. Please hold the mic button and speak.';
+        micBtn.textContent = 'Hold to Talk';
+        return;
+    }
+
+    // Log individual chunk sizes/types for debugging
+    audioChunks.forEach((chunk, idx) => {
+        if (chunk) {
+            console.log(`sendAudio: chunk[${idx}] size =`, chunk.size, 'type =', chunk.type);
+        } else {
+            console.log(`sendAudio: chunk[${idx}] is null/undefined`);
+        }
+    });
+
+    const mimeType = (mediaRecorder && mediaRecorder.mimeType) ? mediaRecorder.mimeType : 'audio/webm';
+    console.log('sendAudio: Using blob mimeType =', mimeType);
+
+    const blob = new Blob(audioChunks, { type: mimeType });
+    console.log('sendAudio: Final blob size =', blob.size);
+
+    // Guard against ultra-short / empty recordings that will break ASR
+    const MIN_BLOB_SIZE = 2000; // bytes; tweak if needed
+    if (blob.size < MIN_BLOB_SIZE) {
+        console.warn('sendAudio: Blob too small to be valid speech. size =', blob.size);
+        statusDiv.textContent = 'Recording too short. Please hold the mic button a bit longer and speak clearly.';
+        micBtn.textContent = 'Hold to Talk';
+        return;
+    }
+
     const formData = new FormData();
-    formData.append('audio', blob, 'recording.wav');
+    const ext = mimeType && mimeType.includes('/') ? mimeType.split('/')[1].split(';')[0] : 'webm';
+    const filename = `recording.${ext}`;
+    formData.append('audio', blob, filename);
+    console.log('sendAudio: Sending file to /process-mic. filename =', filename, 'size =', blob.size);
 
     try {
         const res = await fetch('/process-mic', { method: 'POST', body: formData });
         const data = await res.json();
+
+        console.log('sendAudio: Response from /process-mic =', data);
 
         if (data.error) throw new Error(data.error);
 
@@ -369,16 +427,53 @@ async function sendAudio() {
         startPolling(data.ID, data.total_chunks);
 
     } catch (e) {
-        console.error(e);
-        statusDiv.textContent = "Error: " + e.message;
+        console.error('sendAudio error:', e);
+        statusDiv.textContent = 'Error: ' + e.message;
+    } finally {
+        micBtn.textContent = 'Hold to Talk';
     }
 }
 
 // --- Playback Logic ---
 
+// function startPolling(jobId, totalChunks) {
+//     let currentChunk = 0;
+//     const pollInterval = 500; // ms
+
+//     const poll = async () => {
+//         if (currentChunk >= totalChunks) {
+//             console.log("Polling complete for job", jobId);
+//             return;
+//         }
+
+//         try {
+//             const res = await fetch('/read-file', {
+//                 method: 'POST',
+//                 headers: { 'Content-Type': 'application/json' },
+//                 body: JSON.stringify({ ID: jobId, chunk_ID: currentChunk })
+//             });
+
+//             if (res.status === 200) {
+//                 const data = await res.json();
+//                 console.log("Got Chunk", currentChunk, data);
+//                 addToQueue(data.audio, data.data);
+//                 currentChunk++;
+//                 poll(); // Try next chunk immediately
+//             } else {
+//                 // Not ready, wait
+//                 setTimeout(poll, pollInterval);
+//             }
+//         } catch (e) {
+//             console.error("Polling error:", e);
+//             setTimeout(poll, pollInterval);
+//         }
+//     };
+
+//     poll();
+// }
 function startPolling(jobId, totalChunks) {
     let currentChunk = 0;
-    const pollInterval = 500; // ms
+    const pollInterval = 500; // ms retry delay when chunk not ready
 
     const poll = async () => {
         if (currentChunk >= totalChunks) {
@@ -393,16 +488,20 @@ function startPolling(jobId, totalChunks) {
                 body: JSON.stringify({ ID: jobId, chunk_ID: currentChunk })
             });
 
-            if (res.status === 200) {
-                const data = await res.json();
-                console.log("Got Chunk", currentChunk, data);
+            const data = await res.json();
+            console.log("Got Chunk", currentChunk, "audio length:", data.audio ? data.audio.length : 0);
+
+            // ✅ KEY FIX: only advance if audio is actually ready
+            if (data.audio && data.audio !== "") {
                 addToQueue(data.audio, data.data);
                 currentChunk++;
                 poll(); // Try next chunk immediately
             } else {
-                // Not ready, wait
+                // Chunk not ready yet - retry same chunk after delay
+                console.log("Chunk", currentChunk, "not ready, retrying in", pollInterval, "ms");
                 setTimeout(poll, pollInterval);
             }
+
         } catch (e) {
             console.error("Polling error:", e);
             setTimeout(poll, pollInterval);

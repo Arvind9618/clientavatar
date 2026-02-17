@@ -56,21 +56,61 @@ WELCOME_CONFIG = {
 
 # Locate Rhubarb
 def find_rhubarb():
+    """Locate a usable Rhubarb binary.
+
+    Important for Linux: we now also look for the bundled
+    `Rhubarb-Lip-Sync-1.13.0-Linux/rhubarb` binary that lives in this repo.
+    If no candidate works, RHUBARB_PATH stays as the default 'rhubarb',
+    but all Rhubarb calls will then fail and produce empty mouthCues.
+    """
+
     global RHUBARB_PATH
+
+    # candidates = [
+    #     # Default PATH lookup (if user installed rhubarb system-wide)
+    #     'rhubarb',
+    #     './rhubarb',
+
+    #     # Windows bundle (kept for dev compatibility)
+    #     'rhubarb.exe',
+    #     './rhubarb.exe',
+    #     'Rhubarb-Lip-Sync-1.14.0-Windows/rhubarb.exe',
+    #     './Rhubarb-Lip-Sync-1.14.0-Windows/rhubarb.exe',
+
+    #     # Linux bundle shipped in this project (some archives nest the folder twice)
+    #     'Rhubarb-Lip-Sync-1.13.0-Linux/rhubarb',
+    #     './Rhubarb-Lip-Sync-1.13.0-Linux/rhubarb',
+    #     'Rhubarb-Lip-Sync-1.13.0-Linux/Rhubarb-Lip-Sync-1.13.0-Linux/rhubarb',
+    #     './Rhubarb-Lip-Sync-1.13.0-Linux/Rhubarb-Lip-Sync-1.13.0-Linux/rhubarb',
+    #     '/home/ubuntu/repo/simple_lipsync/Rhubarb-Lip-Sync-1.13.0-Linux/Rhubarb-Lip-Sync-1.13.0-Linux/rhubarb'
+    # ]
     candidates = [
-        'rhubarb', 'rhubarb.exe', './rhubarb.exe',
-        'Rhubarb-Lip-Sync-1.14.0-Windows/rhubarb.exe',
-        './Rhubarb-Lip-Sync-1.14.0-Windows/rhubarb.exe'
-    ]
+    # Absolute path first - guaranteed correct on this server
+    '/home/ubuntu/repo/simple_lipsync/Rhubarb-Lip-Sync-1.13.0-Linux/Rhubarb-Lip-Sync-1.13.0-Linux/rhubarb',
+    # Default PATH lookup (if user installed rhubarb system-wide)
+    'rhubarb',
+    './rhubarb',]
+
     for path in candidates:
         try:
-            subprocess.run([path, '--version'], capture_output=True, timeout=2)
-            RHUBARB_PATH = path
-            print(f"✅ Found Rhubarb at: {RHUBARB_PATH}")
-            return
-        except:
-            continue
-    print("❌ Rhubarb not found. Ensure it is installed.")
+            # If the file exists but is not executable, try to make it executable
+            if os.path.exists(path) and not os.access(path, os.X_OK):
+                try:
+                    os.chmod(path, 0o755)
+                except Exception as chmod_err:
+                    print(f"WARN: Could not chmod Rhubarb candidate {path}: {chmod_err}")
+
+            result = subprocess.run([path, '--version'], capture_output=True, timeout=2)
+            if result.returncode == 0:
+                RHUBARB_PATH = path
+                print(f"✅ Found Rhubarb at: {RHUBARB_PATH}")
+                return
+            else:
+                print(f"WARN: Rhubarb candidate {path} returned code {result.returncode}")
+        except Exception as e:
+            print(f"DEBUG: Rhubarb candidate {path} failed: {e}")
+
+    print("❌ Rhubarb not found. Ensure it is installed or place the binary under Rhubarb-Lip-Sync-1.13.0-Linux/.")
 
 find_rhubarb()
 
@@ -324,21 +364,50 @@ def process_mic():
         return jsonify({'error': 'No audio file'}), 400
         
     file = request.files['audio']
-    # Save temp
-    with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
+    print(f"DEBUG: /process-mic received file: filename={file.filename}, content_type={getattr(file, 'content_type', None)}, content_length={request.content_length}")
+
+    # Save temp (raw upload)
+    with tempfile.NamedTemporaryFile(suffix='.bin', delete=False) as tmp:
         tmp.close()
         tmp_path = tmp.name
         
     try:
         file.save(tmp_path)
-        print(f"DEBUG: Saved mic audio to {tmp_path}. Size: {os.path.getsize(tmp_path)} bytes")
-        
-        # Convert to WAV/PCM for SpeechRecognition
+        raw_size = os.path.getsize(tmp_path)
+        print(f"DEBUG: Saved mic audio to {tmp_path}. Size: {raw_size} bytes")
+
+        # Quick sanity check for obviously invalid uploads
+        MIN_RAW_SIZE = 2000  # bytes; avoid trying ASR on empty/tiny blobs
+        if raw_size < MIN_RAW_SIZE:
+            msg = f"Uploaded audio file too small ({raw_size} bytes). Likely empty/too-short recording."
+            print("WARN: /process-mic -", msg)
+            return jsonify({'error': 'Audio too short or empty. Please hold the mic button a bit longer and try again.'}), 400
+
+        # Convert to WAV/PCM for SpeechRecognition using ffmpeg
         wav_path = tmp_path + "_converted.wav"
-        subprocess.run(['ffmpeg', '-i', tmp_path, '-y', wav_path], capture_output=True)
-        
-        use_path = wav_path if os.path.exists(wav_path) and os.path.getsize(wav_path) > 0 else tmp_path
-        print(f"DEBUG: Using audio file: {use_path}")
+        ffmpeg_cmd = ['ffmpeg', '-y', '-i', tmp_path, '-ac', '1', '-ar', '16000', wav_path]
+        print("DEBUG: Running ffmpeg:", " ".join(ffmpeg_cmd))
+
+        result = subprocess.run(ffmpeg_cmd, capture_output=True, text=True)
+        print("DEBUG: ffmpeg return code:", result.returncode)
+        if result.stdout:
+            print("DEBUG: ffmpeg stdout (first 300 chars):", result.stdout[:300])
+        if result.stderr:
+            print("DEBUG: ffmpeg stderr (first 300 chars):", result.stderr[:300])
+
+        if result.returncode != 0 or not os.path.exists(wav_path):
+            print(f"ERROR: ffmpeg failed or output file missing. returncode={result.returncode}, wav_exists={os.path.exists(wav_path)}")
+            return jsonify({'error': 'Failed to decode audio on server. Please try again or use a different browser.'}), 400
+
+        wav_size = os.path.getsize(wav_path)
+        print(f"DEBUG: Converted WAV file {wav_path} size: {wav_size} bytes")
+        MIN_WAV_SIZE = 2000
+        if wav_size < MIN_WAV_SIZE:
+            print("ERROR: Converted WAV too small to be valid speech.")
+            return jsonify({'error': 'Audio after conversion is too short/invalid for speech recognition.'}), 400
+
+        use_path = wav_path
+        print(f"DEBUG: Using audio file for ASR: {use_path}")
 
         print("DEBUG: Starting ASR...")
         # ASR
@@ -387,8 +456,15 @@ def process_mic():
         return jsonify({'error': str(e)}), 500
     finally:
         if os.path.exists(tmp_path): 
-            try: os.remove(tmp_path)
-            except: pass
+            try:
+                os.remove(tmp_path)
+            except Exception as cleanup_err:
+                print(f"WARN: Failed to remove tmp_path {tmp_path}: {cleanup_err}")
+        if 'wav_path' in locals() and os.path.exists(wav_path):
+            try:
+                os.remove(wav_path)
+            except Exception as cleanup_err:
+                print(f"WARN: Failed to remove wav_path {wav_path}: {cleanup_err}")
 
 @app.route('/talk', methods=['POST'])
 def talk():
@@ -510,4 +586,4 @@ def serve_static(path):
 
 if __name__ == '__main__':
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-    app.run(debug=True, port=8088, host='0.0.0.0')
+    app.run(debug=True, port=8000, host='0.0.0.0')
