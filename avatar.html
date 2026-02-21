@@ -90,23 +90,334 @@
       });
 
       newAvatarPod.embededvideo = true
+    </script>
 
-      // const toggleBtn = document.getElementById('toggleChatbot');
-      // toggleBtn.addEventListener('click', function () {
-      //   const chatbot = document.getElementById('responsive-div-gia');
-      //   if (chatbot.style.display === 'none') {
-      //     chatbot.style.display = 'block';
-      //   } else {
-      //     chatbot.style.display = 'none';
-      //   }
-      // });
+    <!-- ============================================================ -->
+    <!-- MIC → Web Speech API → get_text API → TTS Pipeline           -->
+    <!-- ============================================================ -->
+    <script>
+        (function () {
+          'use strict';
 
-      // Disable console logs
-      console.log = function () { };
-      console.warn = function () { };
-      console.error = function () { };
-      console.info = function () { };
-      console.debug = function () { };
+          // ── Configuration ──────────────────────────────────────────
+          let CONFIG = null;
+          const ASSISTANT_ID = 'webGMR';
+
+          // Load config.json for API URLs
+          fetch('./Kiksy-setup/config/config.json')
+            .then(r => r.json())
+            .then(cfg => {
+              CONFIG = cfg;
+              console.log('[MicSTT] Config loaded:', CONFIG);
+            })
+            .catch(err => console.error('[MicSTT] Failed to load config:', err));
+
+          // ── State ──────────────────────────────────────────────────
+          let isListening = false;
+          let recognition = null;
+          let avatarPod = null;
+          let micBtn = null;
+          let shadowRoot = null;
+
+          // ── Helper: Get or create user/session IDs ─────────────────
+          function getUserId() {
+            let uid = localStorage.getItem('gmr_user_id');
+            if (!uid) {
+              uid = 'user_' + Math.random().toString(36).substr(2, 9);
+              localStorage.setItem('gmr_user_id', uid);
+            }
+            return uid;
+          }
+
+          function getSessionId() {
+            return localStorage.getItem('gmr_session_id') || new Date().toISOString();
+          }
+
+          // ── Helper: Update chat UI in shadow DOM ───────────────────
+          function addChatMessage(role, text) {
+            if (!shadowRoot) return;
+            const chatContent = shadowRoot.querySelector('.chat-content');
+            if (!chatContent) return;
+
+            const div = document.createElement('div');
+            div.classList.add('message');
+            div.classList.add(role === 'user' ? 'user-message' : 'assistant-message');
+            div.textContent = text;
+            chatContent.appendChild(div);
+
+            const chatContainer = shadowRoot.getElementById('chat-container');
+            if (chatContainer) chatContainer.scrollTop = chatContainer.scrollHeight;
+          }
+
+          // ── Helper: Show typing indicator ──────────────────────────
+          function showTypingIndicator() {
+            if (!shadowRoot) return;
+            const chatContent = shadowRoot.querySelector('.chat-content');
+            if (!chatContent) return;
+
+            // Remove existing indicator first
+            hideTypingIndicator();
+
+            const div = document.createElement('div');
+            div.classList.add('message', 'assistant-message', 'typing-message');
+            div.textContent = '...';
+            div.style.opacity = '0.6';
+            div.style.animation = 'pulse 1.5s infinite';
+            chatContent.appendChild(div);
+
+            const chatContainer = shadowRoot.getElementById('chat-container');
+            if (chatContainer) chatContainer.scrollTop = chatContainer.scrollHeight;
+          }
+
+          function hideTypingIndicator() {
+            if (!shadowRoot) return;
+            const typing = shadowRoot.querySelector('.typing-message');
+            if (typing) typing.remove();
+          }
+
+          // ── Helper: Set mic visual state ───────────────────────────
+          function setMicState(listening) {
+            if (!micBtn) return;
+            if (listening) {
+              micBtn.style.borderColor = '#ff0000';
+              micBtn.style.animation = 'redPulse 1.5s infinite';
+            } else {
+              micBtn.style.borderColor = '#0095B5';
+              micBtn.style.animation = '';
+            }
+          }
+
+          // ── Core: Call get_text API ────────────────────────────────
+          async function callGetTextAPI(userText) {
+            if (!CONFIG || !CONFIG.chat) {
+              console.error('[MicSTT] Config not loaded or missing chat URL');
+              return null;
+            }
+
+            const payload = {
+              query: userText,
+              assistant_id: ASSISTANT_ID,
+              sessionID: getSessionId(),
+              userID: getUserId(),
+              language: localStorage.getItem('selectedLanguage') || 'english'
+            };
+
+            console.log('[MicSTT] Calling get_text API:', CONFIG.chat, payload);
+
+            try {
+              const response = await fetch(CONFIG.chat, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+              });
+
+              if (!response.ok) {
+                console.error('[MicSTT] get_text API error:', response.status, response.statusText);
+                return null;
+              }
+
+              const data = await response.json();
+              console.log('[MicSTT] get_text response:', data);
+              return data;
+            } catch (err) {
+              console.error('[MicSTT] get_text API call failed:', err);
+              return null;
+            }
+          }
+
+          // ── Core: Process speech result through pipeline ───────────
+          async function processTranscribedText(text) {
+            if (!text || text.trim() === '') {
+              console.log('[MicSTT] Empty transcription, ignoring');
+              return;
+            }
+
+            console.log('[MicSTT] Transcribed text:', text);
+
+            // 1. Add user message to chat UI
+            addChatMessage('user', text);
+
+            // 2. Show typing indicator
+            showTypingIndicator();
+
+            // 3. Call get_text API
+            const response = await callGetTextAPI(text);
+
+            // 4. Hide typing indicator
+            hideTypingIndicator();
+
+            if (!response) {
+              addChatMessage('assistant', 'Sorry, I could not process your request. Please try again.');
+              return;
+            }
+
+            // 5. Extract response text (handle different possible response formats)
+            let responseText = '';
+            if (typeof response === 'string') {
+              responseText = response;
+            } else if (response.text) {
+              responseText = response.text;
+            } else if (response.response) {
+              responseText = response.response;
+            } else if (response.message) {
+              responseText = response.message;
+            } else if (response.answer) {
+              responseText = response.answer;
+            } else {
+              responseText = JSON.stringify(response);
+            }
+
+            console.log('[MicSTT] Response text:', responseText);
+
+            // 6. Add assistant message to chat UI
+            addChatMessage('assistant', responseText);
+
+            // 7. Pass to TTS pipeline (make avatar speak)
+            if (typeof kiksyObj !== 'undefined' && kiksyObj.kiksy_fn_Talk) {
+              console.log('[MicSTT] Sending to TTS pipeline...');
+              kiksyObj.kiksy_fn_Talk(responseText);
+
+              // Show stop button, hide mic button while speaking
+              const stopBtn = shadowRoot.getElementById('avatar_stopbtn');
+              if (stopBtn) stopBtn.style.display = 'flex';
+              if (micBtn) micBtn.style.display = 'none';
+            } else {
+              console.warn('[MicSTT] kiksyObj.kiksy_fn_Talk not available, skipping TTS');
+            }
+          }
+
+          // ── Core: Initialize Web Speech API ────────────────────────
+          function initSpeechRecognition() {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            if (!SpeechRecognition) {
+              console.error('[MicSTT] Web Speech API not supported in this browser');
+              alert('Speech recognition is not supported in this browser. Please use Chrome or Edge.');
+              return null;
+            }
+
+            const recog = new SpeechRecognition();
+            recog.continuous = false;       // Stop after one utterance
+            recog.interimResults = false;    // Only final results
+            recog.lang = 'en-US';           // Default language
+            recog.maxAlternatives = 1;
+
+            recog.onresult = function (event) {
+              const transcript = event.results[0][0].transcript;
+              const confidence = event.results[0][0].confidence;
+              console.log(`[MicSTT] Speech result: "${transcript}" (confidence: ${(confidence * 100).toFixed(1)}%)`);
+              processTranscribedText(transcript);
+            };
+
+            recog.onerror = function (event) {
+              console.error('[MicSTT] Speech recognition error:', event.error);
+              isListening = false;
+              setMicState(false);
+
+              if (event.error === 'not-allowed') {
+                alert('Microphone permission denied. Please allow microphone access and try again.');
+              }
+            };
+
+            recog.onend = function () {
+              console.log('[MicSTT] Speech recognition ended');
+              isListening = false;
+              setMicState(false);
+            };
+
+            recog.onstart = function () {
+              console.log('[MicSTT] Speech recognition started - speak now...');
+              isListening = true;
+              setMicState(true);
+            };
+
+            return recog;
+          }
+
+          // ── Core: Toggle mic on/off ────────────────────────────────
+          function toggleMic() {
+            if (!recognition) {
+              recognition = initSpeechRecognition();
+              if (!recognition) return;
+            }
+
+            if (isListening) {
+              console.log('[MicSTT] Stopping speech recognition...');
+              recognition.stop();
+            } else {
+              // Update language from localStorage before starting
+              const langMap = {
+                'english': 'en-US',
+                'hindi': 'hi-IN',
+                'telugu': 'te-IN'
+              };
+              const selectedLang = localStorage.getItem('selectedLanguage') || 'english';
+              recognition.lang = langMap[selectedLang] || 'en-US';
+
+              console.log(`[MicSTT] Starting speech recognition (lang: ${recognition.lang})...`);
+              try {
+                recognition.start();
+              } catch (err) {
+                console.error('[MicSTT] Failed to start recognition:', err);
+                // Might already be running, abort and restart
+                recognition.abort();
+                setTimeout(() => {
+                  try { recognition.start(); } catch (e) { console.error('[MicSTT] Retry failed:', e); }
+                }, 100);
+              }
+            }
+          }
+
+          // ── Init: Wait for component to be ready ───────────────────
+          function hookMicButton() {
+            avatarPod = document.getElementById('avatar-pod');
+            if (!avatarPod || !avatarPod.shadowRoot) {
+              console.log('[MicSTT] Waiting for avatar-pod shadow DOM...');
+              setTimeout(hookMicButton, 500);
+              return;
+            }
+
+            shadowRoot = avatarPod.shadowRoot;
+            micBtn = shadowRoot.querySelector('#avatar_talkbtn');
+
+            if (!micBtn) {
+              console.log('[MicSTT] Mic button not found, retrying...');
+              setTimeout(hookMicButton, 500);
+              return;
+            }
+
+            console.log('[MicSTT] ✅ Mic button found, attaching speech handler');
+
+            // Add our click handler (the existing click handler hides the video player)
+            micBtn.addEventListener('click', function (e) {
+              console.log('[MicSTT] Mic button clicked');
+              toggleMic();
+            });
+
+            // Also ensure chat container is visible when mic is used
+            const chatContainer = shadowRoot.getElementById('chat-container');
+            if (chatContainer) {
+              chatContainer.style.display = 'block';
+            }
+
+            console.log('[MicSTT] ✅ Mic → Speech API → get_text pipeline ready');
+          }
+
+          // ── Listen for the component ready event ───────────────────
+          document.addEventListener('kiksy-dom-ready', function () {
+            console.log('[MicSTT] kiksy-dom-ready event received');
+            hookMicButton();
+          });
+
+          // Also try polling in case the event was missed
+          setTimeout(hookMicButton, 2000);
+
+          // ── Re-show mic button when audio finishes ─────────────────
+          document.addEventListener('audioFinished', function () {
+            console.log('[MicSTT] Audio finished, re-showing mic button');
+            if (micBtn) micBtn.style.display = 'flex';
+          });
+
+        })();
     </script>
 
 </body>

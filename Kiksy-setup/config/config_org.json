@@ -1,0 +1,9 @@
+{
+    "tts": "https://1155-103-163-65-41.ngrok-free.app/talk",
+    "readaudio": "https://1155-103-163-65-41.ngrok-free.app/read-file",
+    "readaudioDelay": 2000,
+    "lengthcheck": "https://1155-103-163-65-41.ngrok-free.app/get_chunk",
+    "chat": "https://1155-103-163-65-41.ngrok-free.app/get_text",
+    "getlink": "https://1155-103-163-65-41.ngrok-free.app/get_link",
+    "gptforAssit": true
+}

@@ -1,0 +1,3111 @@
+---START_EXTRACTION---
+Array size: 3108
+KEY_308::ground: rg
+KEY_309::wZzqa
+KEY_310::BbJbm
+KEY_311::lLbyM
+KEY_312::n: center;
+KEY_313::transition
+KEY_314::border
+KEY_315::pBtn">SKIP
+KEY_316::-header h3
+KEY_317:: 0 5px 0;\n
+KEY_318::ow: 0 4px 
+KEY_319::ding: 5px;
+KEY_320::deg); }\n  
+KEY_321::x-shadow: 
+KEY_322::0, 0, 0, 0
+KEY_323::der-radius
+KEY_324:: ">One mom
+KEY_325::x) */\n    
+KEY_326::getOrCreat
+KEY_327::on: fadeIn
+KEY_328::dOwUd
+KEY_329::: 0 4px 8p
+KEY_330::        ou
+KEY_331:: pointer-e
+KEY_332::-form sele
+KEY_333::      0% {
+KEY_334::	display: 
+KEY_335::     	}\n  
+KEY_336::kiksyError
+KEY_337::torAll
+KEY_338::       	70
+KEY_339::	width: 10
+KEY_340::ViTqT
+KEY_341::utline: no
+KEY_342::     		fon
+KEY_343::  left: 50
+KEY_344::VYlmg
+KEY_345::<link rel=
+KEY_346:: 0.3);\n   
+KEY_347::jDHlm
+KEY_348::   		width
+KEY_349::hu_T2q.js
+KEY_350::slateX(34p
+KEY_351::ign-self: 
+KEY_352::s bounce {
+KEY_353::a>\n       
+KEY_354::listenBtn
+KEY_355::ta-rating=
+KEY_356::tom: 1%;\n 
+KEY_357::t: 2px;\n  
+KEY_358::ume-mute
+KEY_359::tCsUX
+KEY_360::: 10px;\n  
+KEY_361::    </div>
+KEY_362::duction" >
+KEY_363::        .b
+KEY_364::submitKiks
+KEY_365::xghGN
+KEY_366:: class="st
+KEY_367::city: 0.7;
+KEY_368::   .hidden
+KEY_369::<div class
+KEY_370::2134mdjgiA
+KEY_371::    	paddi
+KEY_372:: position:
+KEY_373::avatarId
+KEY_374:: z-index: 
+KEY_375::now
+KEY_376:: 	z-index:
+KEY_377::     <inpu
+KEY_378:: none;\n   
+KEY_379:: 5px;\n    
+KEY_380::vatar_text
+KEY_381::mn;\n      
+KEY_382::48px;\n    
+KEY_383:: </div>\n\n 
+KEY_384::r: white;\n
+KEY_385:: 0.7);\n   
+KEY_386::Content-Ty
+KEY_387:: #2fd2fb;\n
+KEY_388::-block;\n  
+KEY_389::DjteQ
+KEY_390::k-question
+KEY_391::255, 0, 0,
+KEY_392::  </div>\n 
+KEY_393::result
+KEY_394::ail {\n    
+KEY_395::rgba(0, 0,
+KEY_396::te-IN
+KEY_397::dSptf
+KEY_398::Oagct
+KEY_399::tra small 
+KEY_400::dXucH
+KEY_401::il::placeh
+KEY_402::nts
+KEY_403::        	}
+KEY_404::      	bac
+KEY_405::9;\n       
+KEY_406::: green !i
+KEY_407::sh</button
+KEY_408:: 9px;\n    
+KEY_409:: 0.2s ease
+KEY_410::Avatar_bus
+KEY_411:: #skipBtn 
+KEY_412::elay: 0.2s
+KEY_413::    z-inde
+KEY_414::#ffffff4a;
+KEY_415:: 10px rgba
+KEY_416::header h3 
+KEY_417::    <span 
+KEY_418::splay", sa
+KEY_419::th: 140px;
+KEY_420::ateX(-20%)
+KEY_421::JBQPX
+KEY_422::WkuMz
+KEY_423:: 255, 0.3)
+KEY_424::IA?
+KEY_425::nt-message
+KEY_426::: 0; displ
+KEY_427::anslateY(-
+KEY_428:: and (min-
+KEY_429::: 1439px) 
+KEY_430::BXtOo
+KEY_431::jLMqy
+KEY_432::t-size: 12
+KEY_433::x 16px rgb
+KEY_434::rea {\n    
+KEY_435::selected
+KEY_436::enter;    
+KEY_437::showFeedba
+KEY_438::: 10px 30p
+KEY_439::ak-word;\n 
+KEY_440::adding: 0;
+KEY_441::c0c42;\n   
+KEY_442::append
+KEY_443::.typing-me
+KEY_444::ight: 100%
+KEY_445::ointer;\n  
+KEY_446::argin-bott
+KEY_447::     	widt
+KEY_448::(-77%)
+KEY_449::th: 30px;\n
+KEY_450::bkcKK
+KEY_451::loadFiller
+KEY_452::" placehol
+KEY_453::hat-form t
+KEY_454::    }\n\n\n\n 
+KEY_455::: block;\n 
+KEY_456::g="1">â˜…</s
+KEY_457::und: white
+KEY_458::BXtmE
+KEY_459::wCxbm
+KEY_460::ckBtn i {\n
+KEY_461::ntent {\n  
+KEY_462::QNCEg
+KEY_463::menusConta
+KEY_464::domainUrl
+KEY_465::ation: pul
+KEY_466::/* Medium-
+KEY_467::ht: 100%;\n
+KEY_468::tDYYJ
+KEY_469::    displa
+KEY_470:: 51px;\n   
+KEY_471::gress
+KEY_472::Ã‚Â¬</button
+KEY_473::avatarID
+KEY_474::syToken
+KEY_475::calStorage
+KEY_476::r: pointer
+KEY_477::   padding
+KEY_478::  transiti
+KEY_479::avatarToke
+KEY_480::eoPlayer">
+KEY_481::ition: all
+KEY_482::tQnPT
+KEY_483::="eager"/>
+KEY_484::d: rgba(25
+KEY_485:: 8px;\n    
+KEY_486::lateY(5px)
+KEY_487::t: 
+KEY_488::-y: auto;\n
+KEY_489::gHIho
+KEY_490::-radius: 7
+KEY_491::lex;\n     
+KEY_492::   	paddin
+KEY_493::h: 25px;\n 
+KEY_494::reens (144
+KEY_495::    margin
+KEY_496::ine the re
+KEY_497::block
+KEY_498::: 20px;\n  
+KEY_499::pointerEve
+KEY_500::60px
+KEY_501::inschedule
+KEY_502::tainer" st
+KEY_503::in-bottom:
+KEY_504::edbackText
+KEY_505::fy-content
+KEY_506::.3s ease;\n
+KEY_507::      alig
+KEY_508:: .feedback
+KEY_509::nd: #fff;\n
+KEY_510::random
+KEY_511::x rgba(0, 
+KEY_512:: .typing-i
+KEY_513::: #ffffff;
+KEY_514:: #backBtn 
+KEY_515::hat-input 
+KEY_516::chatContai
+KEY_517::     .iti 
+KEY_518::r: #ffffff
+KEY_519::p: 4px;\n  
+KEY_520:: 0 rgba(0,
+KEY_521::SDJYK
+KEY_522::       dis
+KEY_523::hmcKp
+KEY_524::GkjAx
+KEY_525::      	pos
+KEY_526::uction img
+KEY_527::       .ty
+KEY_528::kiksyObj
+KEY_529::ebkit-scro
+KEY_530::ay: block;
+KEY_531::v>\n       
+KEY_532::</p>\n     
+KEY_533::   		paddi
+KEY_534::(Optional)
+KEY_535::  <div id=
+KEY_536::    border
+KEY_537::dden;\n    
+KEY_538::padding: 2
+KEY_539:: resize: v
+KEY_540::s="fas fa-
+KEY_541::à°…à°¨à±à°­à°µà°‚ à°Žà°²à°¾
+KEY_542::border-col
+KEY_543::style="\n  
+KEY_544::      marg
+KEY_545::button:hov
+KEY_546::ght: 20px;
+KEY_547::ckBtn:hove
+KEY_548::late(-50%,
+KEY_549::at-form in
+KEY_550:: width: 60
+KEY_551::tmJXz
+KEY_552::ght: 0;\n  
+KEY_553::ckBtn
+KEY_554::    <div c
+KEY_555::s: 10px;\n 
+KEY_556::ens (1200p
+KEY_557::pan id="Av
+KEY_558::FZsHA
+KEY_559::ht: 60px;\n
+KEY_560::on id="lan
+KEY_561:: @keyframe
+KEY_562::  #skipBtn
+KEY_563::       	le
+KEY_564::back-heade
+KEY_565::: 30px;\n  
+KEY_566::text
+KEY_567::       }\n\n
+KEY_568:: 90vw;\n   
+KEY_569::sTvtQ
+KEY_570::stop
+KEY_571::(255, 255,
+KEY_572::#ff6b6b
+KEY_573::https://ap
+KEY_574::TaOTa
+KEY_575:: 0.1px sol
+KEY_576::follow
+KEY_577::hasAttribu
+KEY_578::     	tran
+KEY_579::#sendButto
+KEY_580::textConten
+KEY_581::height: 10
+KEY_582::head
+KEY_583::ely CORS i
+KEY_584::notifyStop
+KEY_585::.chat-body
+KEY_586::DnLdN
+KEY_587::querySelec
+KEY_588::F5821F;\n  
+KEY_589::        ><
+KEY_590::idwlr-nvvR
+KEY_591::  #avatar_
+KEY_592::nt-size: 1
+KEY_593::area:hover
+KEY_594::   	}\n    
+KEY_595::        10
+KEY_596::items: cen
+KEY_597::\n        /
+KEY_598::splay: fle
+KEY_599::w: 0 0 10p
+KEY_600::ms: center
+KEY_601:: 	height: 
+KEY_602:: {\n       
+KEY_603::lQmos
+KEY_604::hquery
+KEY_605::us: 6px 6p
+KEY_606::: fixed;\n 
+KEY_607:: </span>\n\n
+KEY_608::t-family: 
+KEY_609::ter;\n     
+KEY_610::eX(-50%);\n
+KEY_611:: 	padding:
+KEY_612::dow: 0 8px
+KEY_613::base
+KEY_614::URL
+KEY_615::hidden
+KEY_616::.no-bg {\n 
+KEY_617::   transfo
+KEY_618::ght: 120px
+KEY_619::x solid #f
+KEY_620::ter submis
+KEY_621:: .bot-mess
+KEY_622::on {\n     
+KEY_623::5, 0.3);\n 
+KEY_624::submitUser
+KEY_625::55, 255, 2
+KEY_626::itting fee
+KEY_627::EqxJh
+KEY_628::ding: 8px;
+KEY_629::à¤•à¥‹à¤ˆ à¤¸à¥à¤à¤¾à¤µ?
+KEY_630::rgin: 5px 
+KEY_631::chat-close
+KEY_632::  transfor
+KEY_633::ze: 12px;\n
+KEY_634::enu-contai
+KEY_635::om: 0px;\n 
+KEY_636::2px;\n     
+KEY_637::DfNgy
+KEY_638::kiksy_repe
+KEY_639::dTGEk
+KEY_640::ng="4">â˜…</
+KEY_641:: font-fami
+KEY_642::dius: 7px;
+KEY_643::span>\n    
+KEY_644::        #b
+KEY_645::  height: 
+KEY_646::ay", sans-
+KEY_647::     	anim
+KEY_648::eight: -we
+KEY_649::y: block;\n
+KEY_650::generateUU
+KEY_651::avatarName
+KEY_652::r-rating {
+KEY_653::  .languag
+KEY_654::tn img {\n 
+KEY_655::error
+KEY_656::and (min-w
+KEY_657::#avatar_re
+KEY_658::QDVOJ
+KEY_659::elay: 0.4s
+KEY_660::se-btn i {
+KEY_661::at-close-b
+KEY_662::#muteBtn:h
+KEY_663::	z-index: 
+KEY_664:: (Optional
+KEY_665::r #backBtn
+KEY_666::   	border
+KEY_667::v1/speech:
+KEY_668::   <button
+KEY_669::nvgBL
+KEY_670::      curs
+KEY_671::      	opa
+KEY_672::flex
+KEY_673::x) {\n     
+KEY_674::fas fa-vol
+KEY_675::      	tex
+KEY_676::disabled,\n
+KEY_677:: isvalid k
+KEY_678:: 10px;\n   
+KEY_679::dback
+KEY_680::vatar_intr
+KEY_681::1px #6078f
+KEY_682::PBcfN
+KEY_683::se select 
+KEY_684::  	outline
+KEY_685::ontainer {
+KEY_686::tant;\n    
+KEY_687::-btn
+KEY_688::  	object-
+KEY_689::sIONI
+KEY_690::lor: white
+KEY_691::"hindiBtn"
+KEY_692::r .dot {\n 
+KEY_693::Ppwcz
+KEY_694::       .te
+KEY_695::e: 8px;\n  
+KEY_696::       \n  
+KEY_697::lkbtn
+KEY_698::GBnAO
+KEY_699:: .chat-for
+KEY_700::xt-align: 
+KEY_701::ideoPlayer
+KEY_702::a(0, 0, 0,
+KEY_703::  </div>\n\n
+KEY_704::ground-col
+KEY_705:: animation
+KEY_706::   max-wid
+KEY_707::WeMSl
+KEY_708::us: 5px;\n 
+KEY_709:: overflow:
+KEY_710::ax-width: 
+KEY_711::6988528uAXCEu
+KEY_712::m/gtag/js?
+KEY_713::und: #ffff
+KEY_714::    \n     
+KEY_715::     .assi
+KEY_716::xbvOH
+KEY_717::      #sli
+KEY_718:: to {\n    
+KEY_719::       	bo
+KEY_720::999;\n     
+KEY_721::      #clo
+KEY_722::, 0, 0, 0.
+KEY_723::);\n\n      
+KEY_724::  <span cl
+KEY_725::script
+KEY_726::/fonts.goo
+KEY_727::tantId
+KEY_728::setSize
+KEY_729::      .sta
+KEY_730::d pulse an
+KEY_731::\n\n        
+KEY_732::        po
+KEY_733::px) {\n    
+KEY_734:: 	max-widt
+KEY_735::         \n
+KEY_736:: 1; paddin
+KEY_737::color: #81
+KEY_738::t: center;
+KEY_739::size: 9px;
+KEY_740::        tr
+KEY_741::src
+KEY_742::UBmBq
+KEY_743::.feedback-
+KEY_744::    box-sh
+KEY_745::  	border-
+KEY_746::ttons butt
+KEY_747::2|3
+KEY_748::à°‡à°®à±†à°¯à°¿à°²à± à°šà°¿
+KEY_749::eholder {\n
+KEY_750::guage-head
+KEY_751::le="width:
+KEY_752::ckground: 
+KEY_753::    	font-
+KEY_754::PwcUN
+KEY_755::ght: 6px;\n
+KEY_756::bYmSC
+KEY_757::     @medi
+KEY_758::edback-con
+KEY_759::: 25px;\n  
+KEY_760::nvAMx
+KEY_761::  #videoPl
+KEY_762::transcript
+KEY_763::height: 18
+KEY_764::bottom: 8p
+KEY_765::kiksy is r
+KEY_766::n">SUBMIT<
+KEY_767::tn"><i cla
+KEY_768::CgYRS
+KEY_769::g" loading
+KEY_770::venly;\n   
+KEY_771::ound: rgba
+KEY_772::FpHHP
+KEY_773::frXow
+KEY_774:: #urlList 
+KEY_775::nt !import
+KEY_776::      colo
+KEY_777::-width: 48
+KEY_778::rtrait (57
+KEY_779:: margin: 5
+KEY_780::question p
+KEY_781::eUserId
+KEY_782::ft-radius:
+KEY_783::#ffffff4a
+KEY_784::       bac
+KEY_785:: .quick-ta
+KEY_786::th GIA?</p
+KEY_787::0.1);\n    
+KEY_788::        <d
+KEY_789:: src="
+KEY_790::data
+KEY_791::A;\n       
+KEY_792::star {\n   
+KEY_793::       lin
+KEY_794::       pad
+KEY_795::ottom: 15p
+KEY_796::push
+KEY_797::eturned an
+KEY_798::n: 5px 0 5
+KEY_799::ransform 0
+KEY_800::rm textare
+KEY_801::        	a
+KEY_802::epYrS
+KEY_803::     trans
+KEY_804::  position
+KEY_805::         m
+KEY_806::rm: transl
+KEY_807::mediaDevic
+KEY_808::edback-but
+KEY_809::f5;\n      
+KEY_810::   bottom:
+KEY_811::SnCgT
+KEY_812::dback-cont
+KEY_813::50%;\n     
+KEY_814::setScaleRa
+KEY_815::eedbackEma
+KEY_816::a(255, 255
+KEY_817::scrollTop
+KEY_818::2s ease;\n 
+KEY_819::toggle
+KEY_820::Livlc
+KEY_821::Error send
+KEY_822::shadow: 0 
+KEY_823::0 0 15px r
+KEY_824::om: 20px;\n
+KEY_825::2|4|1
+KEY_826::0|1|2|4|3
+KEY_827::: sticky;\n
+KEY_828::   	box-sh
+KEY_829::     }\n\n  
+KEY_830::low-y: aut
+KEY_831::-btn" styl
+KEY_832::        	f
+KEY_833::nd: rgba(2
+KEY_834::kXuze
+KEY_835::oxgOK
+KEY_836::lid #ddd;\n
+KEY_837::     	over
+KEY_838:: justify-c
+KEY_839::height
+KEY_840::IGeGv
+KEY_841::ht: 60%; o
+KEY_842::readAsData
+KEY_843::EvXKk
+KEY_844::border-rad
+KEY_845::126;\n     
+KEY_846::t;\n       
+KEY_847::XImVg
+KEY_848::removeItem
+KEY_849::kIQXA
+KEY_850::iqYaH
+KEY_851::or: #21409
+KEY_852::class="fee
+KEY_853::vas
+KEY_854::.chat-cont
+KEY_855::ler
+KEY_856::feedback
+KEY_857::.png">\n   
+KEY_858::0px) {\n   
+KEY_859::eader h3 {
+KEY_860::, 255, 0.3
+KEY_861::ht: 20px;\n
+KEY_862::   <i clas
+KEY_863::loading
+KEY_864::   /* Smal
+KEY_865::th: 990px)
+KEY_866::eady
+KEY_867::    .flex 
+KEY_868::     heigh
+KEY_869::er {\n     
+KEY_870::8px rgba(0
+KEY_871::: 10px;">\n
+KEY_872::ton:disabl
+KEY_873:: .chatbot-
+KEY_874::qSYGi
+KEY_875::gba(255, 2
+KEY_876::16px;\n    
+KEY_877::gptSetup
+KEY_878::atar_texta
+KEY_879::se:
+KEY_880::   .user-m
+KEY_881::rea id="fe
+KEY_882::"styleshee
+KEY_883::ndicator">
+KEY_884::scale(0);\n
+KEY_885:: 100%;\n   
+KEY_886::an id="clo
+KEY_887::ight: bold
+KEY_888::talkToOpen
+KEY_889::Ahmun
+KEY_890::span class
+KEY_891::ius: 8px;\n
+KEY_892:: 	border-r
+KEY_893::ff4a;\n    
+KEY_894::y: flex;\n 
+KEY_895::     <img 
+KEY_896:: #00000075
+KEY_897:: font-size
+KEY_898::ccc;\n     
+KEY_899::      gap:
+KEY_900::lbar-thumb
+KEY_901::         p
+KEY_902::WzJeZ
+KEY_903::>ÃƒÆ’ Ãƒâ€šÃ‚Â¤Ãƒâ€š
+KEY_904:: 1;\n      
+KEY_905::(28%)
+KEY_906::      #vid
+KEY_907:: 	border: 
+KEY_908::vReUa
+KEY_909::l Address 
+KEY_910::  	positio
+KEY_911::      	bot
+KEY_912::  </script
+KEY_913::\n        	
+KEY_914::adding: 6p
+KEY_915::start
+KEY_916::sition: al
+KEY_917:: 25px;\n   
+KEY_918::QirQq
+KEY_919::tn:hover {
+KEY_920:: 0.15s eas
+KEY_921::4;\n       
+KEY_922::audio/webm
+KEY_923::th;\n      
+KEY_924::erflow-y: 
+KEY_925:: 	white-sp
+KEY_926::5, 130, 31
+KEY_927::bsolute;\n 
+KEY_928::r-events: 
+KEY_929::#0000004d;
+KEY_930::put:disabl
+KEY_931::      }\n\n\n
+KEY_932::ight: 15px
+KEY_933::taPfP
+KEY_934::         #
+KEY_935::1px solid 
+KEY_936::ont-size: 
+KEY_937::ntent">\n  
+KEY_938::  border-t
+KEY_939::   	100% {
+KEY_940::   text-tr
+KEY_941::-fit: cont
+KEY_942::    src="h
+KEY_943::   }\n     
+KEY_944::der: solid
+KEY_945::showLangua
+KEY_946::-index: 10
+KEY_947::   .typing
+KEY_948::min-width:
+KEY_949::iv class="
+KEY_950::isplay: no
+KEY_951::lor: #ccc;
+KEY_952::ax/libs/fo
+KEY_953::ssage a {\n
+KEY_954::inter;\n   
+KEY_955::a (max-wid
+KEY_956::ffff;\n    
+KEY_957:: #21409A;\n
+KEY_958::     botto
+KEY_959::ss="star" 
+KEY_960::cLyLy
+KEY_961:: white;\n  
+KEY_962:::none;">\n 
+KEY_963:: auto;\n   
+KEY_964::      	fon
+KEY_965::ight: 18px
+KEY_966::ackground-
+KEY_967::ess (Optio
+KEY_968::innerHTML
+KEY_969::ion: colum
+KEY_970::  width: 8
+KEY_971::fn_introdu
+KEY_972::solute;\n  
+KEY_973::N4JWZ71L90
+KEY_974::</div>\n\n\n 
+KEY_975::booso
+KEY_976::er-box;\n  
+KEY_977::        ba
+KEY_978::350px
+KEY_979::pan class=
+KEY_980::    bottom
+KEY_981::gmr_user_i
+KEY_982::   	height
+KEY_983::star.error
+KEY_984::eEuYV
+KEY_985::: 900px) {
+KEY_986::mg src="
+KEY_987::leAPI
+KEY_988::scrollHeig
+KEY_989::id=G-N4JWZ
+KEY_990::border: 0.
+KEY_991::     #subm
+KEY_992::e: 13px;\n 
+KEY_993::m 0.3s eas
+KEY_994::      \n   
+KEY_995::        #s
+KEY_996::   </div>\n
+KEY_997::toggle_hid
+KEY_998::g, #ffffff
+KEY_999::column;\n  
+KEY_1000::Optional)
+KEY_1001:: height: 1
+KEY_1002::height: 35
+KEY_1003::-reply"></
+KEY_1004::(0%)
+KEY_1005::ground: #f
+KEY_1006::        .s
+KEY_1007::s infinite
+KEY_1008::oWWUR
+KEY_1009::yle="posit
+KEY_1010::ent);\n    
+KEY_1011::enter;\n   
+KEY_1012::idth: 479p
+KEY_1013::ign: cente
+KEY_1014::toString
+KEY_1015::68px - 991
+KEY_1016::       rig
+KEY_1017::ba(0, 0, 0
+KEY_1018::       .fe
+KEY_1019::     <span
+KEY_1020::    paddin
+KEY_1021::364119BgHcpa
+KEY_1022::    pointe
+KEY_1023::uRfqC
+KEY_1024::\n        \n
+KEY_1025::#languageB
+KEY_1026::ss="star-r
+KEY_1027::yMDkA
+KEY_1028::\n        @
+KEY_1029::	box-shado
+KEY_1030::nimation *
+KEY_1031::DZYDS
+KEY_1032::amIyM
+KEY_1033::px - 1199p
+KEY_1034::gptAssista
+KEY_1035::500px;\n   
+KEY_1036::replace
+KEY_1037::syResponse
+KEY_1038::/p>\n      
+KEY_1039::a-rating="
+KEY_1040::gyJqy
+KEY_1041::zIjKP
+KEY_1042::applicatio
+KEY_1043::    /* Def
+KEY_1044::oduction:h
+KEY_1045::in-top: 5p
+KEY_1046::11px;\n    
+KEY_1047::CNzwo
+KEY_1048::#videoPlay
+KEY_1049::nput,\n    
+KEY_1050::adius: 10p
+KEY_1051:: 	justify-
+KEY_1052::LENWp
+KEY_1053::ing audio 
+KEY_1054::videoPlaye
+KEY_1055::rgin: 6px 
+KEY_1056::erline;\n  
+KEY_1057::ight: 5vw;
+KEY_1058:: align-ite
+KEY_1059::      top:
+KEY_1060::");\n      
+KEY_1061::isplay", s
+KEY_1062::form: scal
+KEY_1063::CcUBW
+KEY_1064::yaLrE
+KEY_1065::d: #fff;\n 
+KEY_1066::yle="displ
+KEY_1067::at-form .e
+KEY_1068::21F;\n     
+KEY_1069::ear-gradie
+KEY_1070::  .chat-fo
+KEY_1071::71L90"\n   
+KEY_1072::on" src="
+KEY_1073::ace: pre-w
+KEY_1074::rZRGV
+KEY_1075::eight: 700
+KEY_1076::id #0095B5
+KEY_1077::    to {\n 
+KEY_1078::dback-ques
+KEY_1079::nguage
+KEY_1080::.3);\n     
+KEY_1081::listenHand
+KEY_1082:: 410px) an
+KEY_1083::: 0px soli
+KEY_1084::createNewS
+KEY_1085::tor
+KEY_1086::gptLLMsetu
+KEY_1087::tisfaction
+KEY_1088::/6.4.0/css
+KEY_1089::="typing-i
+KEY_1090::#avatar_te
+KEY_1091::sendToGoog
+KEY_1092::top: 15px;
+KEY_1093::ndow.dataL
+KEY_1094::aSixt
+KEY_1095::se 1.5s in
+KEY_1096::00%;\n     
+KEY_1097:: (max-widt
+KEY_1098::gin-left: 
+KEY_1099::v id="slid
+KEY_1100::absolute;\n
+KEY_1101::   box-sha
+KEY_1102::GIA à°¤à±‹ à°®à±€ 
+KEY_1103::recognize?
+KEY_1104::Message
+KEY_1105::         h
+KEY_1106::  width: 1
+KEY_1107::r: #f0f0f0
+KEY_1108::ondataavai
+KEY_1109::IAjgr
+KEY_1110::JKMHx
+KEY_1111::orm: trans
+KEY_1112::over {\n   
+KEY_1113::ound: #0c0
+KEY_1114::1.1) trans
+KEY_1115::none;" >\n 
+KEY_1116::ustify-con
+KEY_1117::     right
+KEY_1118::   height:
+KEY_1119::rONGs
+KEY_1120::    #avata
+KEY_1121:: 0, 0, 0.2
+KEY_1122::  max-widt
+KEY_1123::json
+KEY_1124::   min-hei
+KEY_1125::older {\n  
+KEY_1126::are.com/aj
+KEY_1127::MxSrU
+KEY_1128::    height
+KEY_1129::t-size: 13
+KEY_1130::margin-bot
+KEY_1131::toISOStrin
+KEY_1132:: 1px #fff;
+KEY_1133::ht: 700;\n 
+KEY_1134::    .messa
+KEY_1135::ht: 20%;\n 
+KEY_1136::mediaRecor
+KEY_1137::  	color: 
+KEY_1138:: #001fc4;\n
+KEY_1139::v>\n\n      
+KEY_1140::enly;\n    
+KEY_1141::pin {\n    
+KEY_1142::ner" style
+KEY_1143::sessionIni
+KEY_1144::amily: "Re
+KEY_1145::x - 1439px
+KEY_1146::gmr_sessio
+KEY_1147:: 0, 0.2);\n
+KEY_1148::isplay: bl
+KEY_1149::    @media
+KEY_1150::cors
+KEY_1151::rate your 
+KEY_1152::s-serif;\n 
+KEY_1153::size: 13px
+KEY_1154::\n        p
+KEY_1155::validuser
+KEY_1156::       max
+KEY_1157::       bot
+KEY_1158::lay: block
+KEY_1159::"1280" wid
+KEY_1160::ge {\n     
+KEY_1161::ckForm
+KEY_1162::messagehis
+KEY_1163::w-wrap: br
+KEY_1164::   width: 
+KEY_1165::, 0);\n    
+KEY_1166::   from {\n
+KEY_1167::ttps://www
+KEY_1168::       	po
+KEY_1169::HFaMu
+KEY_1170::introducti
+KEY_1171::t: calc(10
+KEY_1172:: #urlclose
+KEY_1173::ontent: ce
+KEY_1174::erty
+KEY_1175::#e4e4e4, t
+KEY_1176::.8);\n     
+KEY_1177::adow: 0 8p
+KEY_1178::tive;\n    
+KEY_1179::tify-conte
+KEY_1180:: Medium sc
+KEY_1181::       	ma
+KEY_1182::classList
+KEY_1183::class="lan
+KEY_1184::dth: 100%;
+KEY_1185::assistant-
+KEY_1186::xxx-xxxxxx
+KEY_1187::ing: 10px;
+KEY_1188::        	h
+KEY_1189::ass="dot">
+KEY_1190::   animati
+KEY_1191::i></button
+KEY_1192::         }
+KEY_1193::      	pad
+KEY_1194:: #eee;\n   
+KEY_1195::bot-contai
+KEY_1196::     box-s
+KEY_1197::btn img {\n
+KEY_1198::ock;\n     
+KEY_1199::t: auto;\n 
+KEY_1200::style="dis
+KEY_1201::     margi
+KEY_1202::dow: 0 0 3
+KEY_1203::  width: 6
+KEY_1204::op: 8px;\n 
+KEY_1205::      posi
+KEY_1206::     overf
+KEY_1207::Avatar_int
+KEY_1208::@import ur
+KEY_1209::	padding: 
+KEY_1210:: #21409a;\n
+KEY_1211::-index: 99
+KEY_1212::80px) */\n 
+KEY_1213::1.1);\n    
+KEY_1214::age a:hove
+KEY_1215::und-color:
+KEY_1216::  backgrou
+KEY_1217::CcMzn
+KEY_1218::rgin-botto
+KEY_1219::n/json
+KEY_1220::shed 1px #
+KEY_1221:: pulse {\n 
+KEY_1222::ng: 5px;\n 
+KEY_1223::apiKey3
+KEY_1224::d;\n       
+KEY_1225::5px;\n     
+KEY_1226::pgBsj
+KEY_1227::rame>\n\n   
+KEY_1228::  gap: 6px
+KEY_1229::hed
+KEY_1230::tion: rela
+KEY_1231::kiksyTalk
+KEY_1232::olume-up">
+KEY_1233::der #backB
+KEY_1234::ng: 6px 8p
+KEY_1235::127.0.0.1
+KEY_1236::">ENGLISH<
+KEY_1237::rame img {
+KEY_1238::m: 120px;\n
+KEY_1239::	font-size
+KEY_1240::oeTMn
+KEY_1241::/all.min.c
+KEY_1242::(-1px);\n  
+KEY_1243::tton>\n    
+KEY_1244::    		font
+KEY_1245::</h3>\n    
+KEY_1246::container 
+KEY_1247::englishBtn
+KEY_1248::ound: #f0f
+KEY_1249::       </s
+KEY_1250::openVideo
+KEY_1251::tion: abso
+KEY_1252::TWgtF
+KEY_1253::x 4px rgba
+KEY_1254::mobile (<4
+KEY_1255::handleInpu
+KEY_1256::geSelectio
+KEY_1257::></textare
+KEY_1258::ection: co
+KEY_1259::onerror
+KEY_1260::put:focus,
+KEY_1261::or: #333;\n
+KEY_1262::      		fo
+KEY_1263::ius: 5px;\n
+KEY_1264::0px;\n     
+KEY_1265::isvalid
+KEY_1266::  cursor: 
+KEY_1267::ymcEW
+KEY_1268::linear-gra
+KEY_1269::b {\n      
+KEY_1270::  display:
+KEY_1271::-in-out bo
+KEY_1272::: 480px) {
+KEY_1273::        he
+KEY_1274::nd: transp
+KEY_1275::h: 15px;\n 
+KEY_1276:: 0;\n      
+KEY_1277::auto
+KEY_1278:: pointer;\n
+KEY_1279::: 5px;\n   
+KEY_1280::       #vi
+KEY_1281::WEBM_OPUS
+KEY_1282::play: bloc
+KEY_1283:: width: 2p
+KEY_1284::resize: ve
+KEY_1285::round: rgb
+KEY_1286::Optional)<
+KEY_1287::gmr.kiksy.
+KEY_1288::NQyTl
+KEY_1289:: #ffd700;\n
+KEY_1290::appendChil
+KEY_1291::" style="d
+KEY_1292::play:none"
+KEY_1293::     <canv
+KEY_1294::or: #fffff
+KEY_1295:: 15px;\n   
+KEY_1296::om/kiks-li
+KEY_1297::     .tag-
+KEY_1298::       ::-
+KEY_1299::      .cha
+KEY_1300::convertBlo
+KEY_1301::bkit-scrol
+KEY_1302::      	hei
+KEY_1303::up/assets/
+KEY_1304::: 29px;\n  
+KEY_1305::dot:nth-ch
+KEY_1306:: h3 {\n    
+KEY_1307::ytHBl
+KEY_1308::lass="feed
+KEY_1309::er-right: 
+KEY_1310:: 	flex-dir
+KEY_1311::ght: 40px;
+KEY_1312::   	//    
+KEY_1313::0.3s ease;
+KEY_1314::      	z-i
+KEY_1315::.chat-inpu
+KEY_1316::d #ffffff4
+KEY_1317::backLangua
+KEY_1318::ex: 1;\n   
+KEY_1319::WsATC
+KEY_1320::      tran
+KEY_1321::      	wid
+KEY_1322::     	posi
+KEY_1323::="dot"></d
+KEY_1324::ursor: poi
+KEY_1325::flex;\n    
+KEY_1326::   font-si
+KEY_1327::X(-50%);\n 
+KEY_1328::zSKUX
+KEY_1329::    .langu
+KEY_1330::px 0;\n    
+KEY_1331::   }\n\n    
+KEY_1332::GIA à¤•à¥‡ à¤¸à¤¾à¤¥
+KEY_1333::: none; ju
+KEY_1334::  <h3>Plea
+KEY_1335::savewebFee
+KEY_1336::yWxoP
+KEY_1337::hindi
+KEY_1338::ation: uns
+KEY_1339::      
+KEY_1340::       pos
+KEY_1341::}\n\n       
+KEY_1342::dius: 5px 
+KEY_1343::KtlMD
+KEY_1344::    align-
+KEY_1345::n_id
+KEY_1346::<a href="t
+KEY_1347::e finish a
+KEY_1348::hGQmU
+KEY_1349::5a6;\n     
+KEY_1350::oQQhe
+KEY_1351::    	text-
+KEY_1352::ator .dot 
+KEY_1353:: overflow-
+KEY_1354::nce with G
+KEY_1355::createElem
+KEY_1356::s: center;
+KEY_1357::GMtyc
+KEY_1358::ity: 1;\n  
+KEY_1359::click
+KEY_1360::loadFromLo
+KEY_1361::         z
+KEY_1362::avatar_sto
+KEY_1363::    #langu
+KEY_1364::herit;\n   
+KEY_1365::8);\n      
+KEY_1366::-items: ce
+KEY_1367::      </di
+KEY_1368::n-top: -4p
+KEY_1369::rYyPp
+KEY_1370:: 5px 10px;
+KEY_1371::sxLey
+KEY_1372::verflow-y:
+KEY_1373::l("https:/
+KEY_1374::;">\n      
+KEY_1375::nimation-d
+KEY_1376::cymVe
+KEY_1377::as height=
+KEY_1378:: 		box-sha
+KEY_1379::ZhPXb
+KEY_1380::iv><div cl
+KEY_1381:: 	resize: 
+KEY_1382::       mar
+KEY_1383::EwAYX
+KEY_1384::up/fd/data
+KEY_1385::    	botto
+KEY_1386::        ma
+KEY_1387::xNJhq
+KEY_1388::   .tag-bt
+KEY_1389:: box-shado
+KEY_1390::ayer || []
+KEY_1391::r.kiksy.li
+KEY_1392::  40% {\n  
+KEY_1393::  	padding
+KEY_1394::fAUeZ
+KEY_1395::         r
+KEY_1396::	align-sel
+KEY_1397::wKuGN
+KEY_1398::ner
+KEY_1399::slideavata
+KEY_1400::stopAudio
+KEY_1401:: 7px;\n    
+KEY_1402::ba(245, 13
+KEY_1403::   <img id
+KEY_1404::color: #cc
+KEY_1405::getElement
+KEY_1406::      ::pl
+KEY_1407:: 16px rgba
+KEY_1408::rder-radiu
+KEY_1409::gptKey
+KEY_1410::e-header #
+KEY_1411::th: 1919px
+KEY_1412::  <div cla
+KEY_1413::dFchc
+KEY_1414::none
+KEY_1415::Email Addr
+KEY_1416::ne-height:
+KEY_1417::         j
+KEY_1418::#kiksy_tex
+KEY_1419::</i>\n     
+KEY_1420::cZqJy
+KEY_1421:: Tablet po
+KEY_1422::gin-top: 1
+KEY_1423::w: 0 2px 4
+KEY_1424:: 22px;\n   
+KEY_1425:: relative;
+KEY_1426::cqFUl
+KEY_1427:: max-width
+KEY_1428::="submitBt
+KEY_1429::zzOKW
+KEY_1430::nswering y
+KEY_1431::ransparent
+KEY_1432::.2s ease;\n
+KEY_1433::  \n       
+KEY_1434::anguage-co
+KEY_1435::adius: 20p
+KEY_1436::duration: 
+KEY_1437::rder: 1px 
+KEY_1438::cale(1);\n 
+KEY_1439::t+Display:
+KEY_1440::  }\n\n     
+KEY_1441::   left: 5
+KEY_1442::x: 1;\n    
+KEY_1443::videostatu
+KEY_1444::d="avatar_
+KEY_1445::t"></div><
+KEY_1446::0, 0, 0.1)
+KEY_1447::WZpbi
+KEY_1448::-bottom-le
+KEY_1449::ass="chat-
+KEY_1450::font-size:
+KEY_1451::   <div cl
+KEY_1452:: translate
+KEY_1453::ty: 0.9;\n 
+KEY_1454::tored loca
+KEY_1455::lor: #F582
+KEY_1456::inSBL
+KEY_1457::       #ch
+KEY_1458::btn:hover 
+KEY_1459::m: 5px;\n  
+KEY_1460:: #feedback
+KEY_1461::px;">\n    
+KEY_1462::  <h3>Feed
+KEY_1463:: center;\n 
+KEY_1464::form: rota
+KEY_1465::0% - 40%);
+KEY_1466::ubmitted s
+KEY_1467::    animat
+KEY_1468::"><button 
+KEY_1469::t: space-e
+KEY_1470::le="displa
+KEY_1471::lastUpdate
+KEY_1472::	line-heig
+KEY_1473::ton {\n    
+KEY_1474::>\n        
+KEY_1475::none;\n    
+KEY_1476::4a;\n      
+KEY_1477::solid rgb(
+KEY_1478::Messages
+KEY_1479::        .f
+KEY_1480::old;\n     
+KEY_1481::closeChatA
+KEY_1482:: 	}\n      
+KEY_1483::: auto;\n  
+KEY_1484::dth: 25px;
+KEY_1485::padding: 0
+KEY_1486::kiksy-dom-
+KEY_1487:: id="avata
+KEY_1488::lex: 1;\n  
+KEY_1489::add
+KEY_1490::weight: 40
+KEY_1491::telugu
+KEY_1492::one;\n     
+KEY_1493::      }\n  
+KEY_1494::nd</button
+KEY_1495::EBzeg
+KEY_1496::xtarea:foc
+KEY_1497::0.1s;\n    
+KEY_1498::KyyfZ
+KEY_1499::container
+KEY_1500::#F5821F;\n 
+KEY_1501::knoSb
+KEY_1502::sion
+KEY_1503::      	}\n 
+KEY_1504::eak-word;\n
+KEY_1505::touchstart
+KEY_1506::e 1.4s inf
+KEY_1507::Script loa
+KEY_1508::t-size: 9p
+KEY_1509::outline: n
+KEY_1510::size
+KEY_1511::src="
+KEY_1512::CGcgP
+KEY_1513::POST
+KEY_1514::fsPCx
+KEY_1515::width: 50%
+KEY_1516::r-radius: 
+KEY_1517::bject-fit:
+KEY_1518::eqGhB
+KEY_1519::        #a
+KEY_1520::ia (min-wi
+KEY_1521:: }\n\n      
+KEY_1522::rcular */\n
+KEY_1523:: 	width: 1
+KEY_1524::-loading" 
+KEY_1525::ed Hat Dis
+KEY_1526::   positio
+KEY_1527::eft: auto;
+KEY_1528::domain
+KEY_1529::olor: #214
+KEY_1530::(arguments
+KEY_1531::n-width: 7
+KEY_1532::_cobrowsin
+KEY_1533::ex;\n      
+KEY_1534::ton id="te
+KEY_1535:: à¤†à¤ªà¤•à¥€ à¤…à¤¨à¥à¤­
+KEY_1536::uage-heade
+KEY_1537::adow: 0 0 
+KEY_1538::ck;\n      
+KEY_1539::, 255, 0.2
+KEY_1540::failed wit
+KEY_1541:: 60%; heig
+KEY_1542::ction
+KEY_1543::ing: 20px;
+KEY_1544::pbtn
+KEY_1545::ding: 0;\n 
+KEY_1546::display:no
+KEY_1547::  overflow
+KEY_1548::language-b
+KEY_1549::       ali
+KEY_1550::umn;\n     
+KEY_1551::dow: 0 0 0
+KEY_1552::acity: 1 !
+KEY_1553::       col
+KEY_1554::teX(-50%);
+KEY_1555::tar_talkbt
+KEY_1556::rgb(0, 0, 
+KEY_1557::tion: all 
+KEY_1558::-decoratio
+KEY_1559::essage {\n 
+KEY_1560::Kiksy_busy
+KEY_1561::00021;\n   
+KEY_1562::btn
+KEY_1563::     width
+KEY_1564::older="Ent
+KEY_1565::10;\n      
+KEY_1566::ck-header 
+KEY_1567::nsition: t
+KEY_1568::iksyToken
+KEY_1569::bRufj
+KEY_1570::   opacity
+KEY_1571:: width: 70
+KEY_1572::n-top: aut
+KEY_1573:: #muteBtn 
+KEY_1574::New sessio
+KEY_1575::tup
+KEY_1576::size: 14px
+KEY_1577::ixed;\n    
+KEY_1578::load scrip
+KEY_1579::    	line-
+KEY_1580::location
+KEY_1581:: rgba(255,
+KEY_1582::\n        }
+KEY_1583::ant;\n     
+KEY_1584::d {\n      
+KEY_1585::top: 0px;p
+KEY_1586:: input {\n 
+KEY_1587::ht: 27px;\n
+KEY_1588::5s;">\n    
+KEY_1589::ion: absol
+KEY_1590::align: lef
+KEY_1591::     	top:
+KEY_1592::portant;\n 
+KEY_1593::_repeatbtn
+KEY_1594::   #kiksy-
+KEY_1595::100%;\n    
+KEY_1596::would you 
+KEY_1597::   <p>How 
+KEY_1598::ute;bottom
+KEY_1599::       	op
+KEY_1600::       <di
+KEY_1601::-color: bl
+KEY_1602::p {\n      
+KEY_1603::ine-height
+KEY_1604::98;\n      
+KEY_1605::xqnMK
+KEY_1606::        di
+KEY_1607::getTime
+KEY_1608::center;\n  
+KEY_1609::rgin-top: 
+KEY_1610::User said:
+KEY_1611::right: 185
+KEY_1612:: ><i class
+KEY_1613::    positi
+KEY_1614::er: none;\n
+KEY_1615::display
+KEY_1616::ild(3) {\n 
+KEY_1617::="display:
+KEY_1618::age-contai
+KEY_1619::x 6px 6px;
+KEY_1620::ht: 70px;\n
+KEY_1621::ere to cha
+KEY_1622::contain;\n 
+KEY_1623::n id="send
+KEY_1624::  font-siz
+KEY_1625::   overflo
+KEY_1626::   top: 50
+KEY_1627::kiksy-load
+KEY_1628:: 14px;\n   
+KEY_1629:: 	align-it
+KEY_1630::    backgr
+KEY_1631::div
+KEY_1632::    	overf
+KEY_1633::ottompanel
+KEY_1634::ap: wrap;\n
+KEY_1635:: 8px 10px;
+KEY_1636::    	}\n   
+KEY_1637::nscribe
+KEY_1638::    gap: 8
+KEY_1639::rap;\n     
+KEY_1640::.2s;\n     
+KEY_1641::ly: inheri
+KEY_1642::eedback-qu
+KEY_1643::submitBtn
+KEY_1644::  /* Extra
+KEY_1645::ily: "Red 
+KEY_1646::ff7d;\n    
+KEY_1647::radius: 8p
+KEY_1648::flex-end;\n
+KEY_1649::mbRWQ
+KEY_1650::ckEmail {\n
+KEY_1651::xhCEt
+KEY_1652::à°°à±à°¨à°¾à°®à°¾ (Op
+KEY_1653:: when inte
+KEY_1654::10px;\n    
+KEY_1655:: empty res
+KEY_1656::="muteBtn"
+KEY_1657::></div>\n  
+KEY_1658::      heig
+KEY_1659::enabledTra
+KEY_1660::remove
+KEY_1661::Text::plac
+KEY_1662:: data-rati
+KEY_1663::        <s
+KEY_1664::n: all .5s
+KEY_1665::: left;\n  
+KEY_1666::04;\n      
+KEY_1667::      .bot
+KEY_1668::proceedWit
+KEY_1669::display: f
+KEY_1670::    object
+KEY_1671::gn: center
+KEY_1672::olor: #fff
+KEY_1673::tar_introd
+KEY_1674::narea {\n  
+KEY_1675::up/fd/cont
+KEY_1676:: 20px;\n   
+KEY_1677::-container
+KEY_1678::llbar-thum
+KEY_1679::e(1.1);\n  
+KEY_1680::       <sp
+KEY_1681::content" s
+KEY_1682:: 50px;\n   
+KEY_1683:: 0.3s ease
+KEY_1684::@keyframes
+KEY_1685::er">\n     
+KEY_1686::<img src="
+KEY_1687::index: 998
+KEY_1688::r; transfo
+KEY_1689:: 0 rgba(25
+KEY_1690::v class="l
+KEY_1691::onload
+KEY_1692::  :host {\n
+KEY_1693::  	margin-
+KEY_1694::atar_stopb
+KEY_1695::t: 700;\n  
+KEY_1696::GxrPR
+KEY_1697::r: #F5821F
+KEY_1698::yoiiF
+KEY_1699::uction:act
+KEY_1700::hhqrK
+KEY_1701::     borde
+KEY_1702::h status:
+KEY_1703::EPlyV
+KEY_1704::recording
+KEY_1705::  #muteBtn
+KEY_1706::        li
+KEY_1707::kiksyLLMse
+KEY_1708::indicator 
+KEY_1709::lateX(-40%
+KEY_1710::ize: 16px;
+KEY_1711::1F;\n      
+KEY_1712::#fff5;\n   
+KEY_1713::eoPlayer {
+KEY_1714::ia not sup
+KEY_1715::    font-f
+KEY_1716::form texta
+KEY_1717::__flag-con
+KEY_1718::      #sub
+KEY_1719::ession
+KEY_1720::sage
+KEY_1721::kiksyLLM
+KEY_1722::ZkKms
+KEY_1723::      .fee
+KEY_1724::       <if
+KEY_1725::color: #F5
+KEY_1726::.js
+KEY_1727::Please use
+KEY_1728::Red Hat Di
+KEY_1729::./index-Bv
+KEY_1730::back-butto
+KEY_1731::muteBtn
+KEY_1732::nd: #F5821
+KEY_1733::="star" da
+KEY_1734::hasOwnProp
+KEY_1735::guageBackB
+KEY_1736:: 90px;\n   
+KEY_1737::pgcTH
+KEY_1738::: absolute
+KEY_1739::-btn {\n   
+KEY_1740::        <b
+KEY_1741::ckground-c
+KEY_1742::yMessage
+KEY_1743::: 50%;\n   
+KEY_1744::role
+KEY_1745::<textarea 
+KEY_1746::child(1) {
+KEY_1747:: #ffffff4a
+KEY_1748::r {\n      
+KEY_1749::en-IN
+KEY_1750::w: 0 4px 8
+KEY_1751::ay: inline
+KEY_1752::relative;\n
+KEY_1753::rgin: 0;\n 
+KEY_1754::enu-button
+KEY_1755::à¤µ à¤•à¥ˆà¤¸à¤¾ à¤°à¤¹à¤¾
+KEY_1756::ating="3">
+KEY_1757::Process
+KEY_1758:: border-ra
+KEY_1759::dth: 575px
+KEY_1760::color: #ff
+KEY_1761::        	z
+KEY_1762::rder: 2px 
+KEY_1763::canvas" st
+KEY_1764::5|3|4|0|1|
+KEY_1765::n>\n       
+KEY_1766::ent: cente
+KEY_1767::tialized
+KEY_1768::     curso
+KEY_1769:: 	left: -9
+KEY_1770::     .mess
+KEY_1771::ve/webGMR/
+KEY_1772::HdPef
+KEY_1773::detail
+KEY_1774::estions? (
+KEY_1775:: 0.2s;\n   
+KEY_1776::3px;\n     
+KEY_1777::-weight: 4
+KEY_1778::GMpzG
+KEY_1779::UserById?u
+KEY_1780::X(-1%);\n  
+KEY_1781::ns-serif;\n
+KEY_1782::   flex-wr
+KEY_1783::     	righ
+KEY_1784::tory
+KEY_1785::t: bold;\n 
+KEY_1786::dYMdl
+KEY_1787::ight: 550p
+KEY_1788::eight: 95p
+KEY_1789::then
+KEY_1790::ing {\n    
+KEY_1791::t-weight: 
+KEY_1792::kcLiq
+KEY_1793::/script>\n\n
+KEY_1794::kdAmN
+KEY_1795::zTSrX
+KEY_1796::size: 11px
+KEY_1797::   #feedba
+KEY_1798:: min-heigh
+KEY_1799::lex-direct
+KEY_1800::y:none;">\n
+KEY_1801::linkifyTex
+KEY_1802::ght: auto;
+KEY_1803::Feedback s
+KEY_1804::a:focus {\n
+KEY_1805::nt: center
+KEY_1806::fkGWR
+KEY_1807:: flex-star
+KEY_1808::Error acce
+KEY_1809::n: absolut
+KEY_1810::% {\n      
+KEY_1811::     justi
+KEY_1812::GrIyq
+KEY_1813::OWgMN
+KEY_1814::syemf
+KEY_1815::: nowrap;\n
+KEY_1816::ubmission 
+KEY_1817::ign-items:
+KEY_1818::ateX(-50%)
+KEY_1819::ackground:
+KEY_1820::ng: 8px;\n 
+KEY_1821::kjFXf
+KEY_1822:: id="Engli
+KEY_1823::w Date());
+KEY_1824:: #ff4d4d !
+KEY_1825::        	b
+KEY_1826:: <div clas
+KEY_1827::XoNRL
+KEY_1828::onstate
+KEY_1829::setupSpeec
+KEY_1830::tom: 55px;
+KEY_1831:: 0, 0, 0);
+KEY_1832::ass="star"
+KEY_1833::hat-form i
+KEY_1834:: 80px;\n   
+KEY_1835::dow: none 
+KEY_1836:: #ffffff;\n
+KEY_1837::ze: 14px;\n
+KEY_1838::height: 20
+KEY_1839::: 80%;\n   
+KEY_1840::-size: 13p
+KEY_1841::      	bor
+KEY_1842::   margin:
+KEY_1843::setItem
+KEY_1844:: 0 0 16px 
+KEY_1845::t {\n      
+KEY_1846:: 0);\n     
+KEY_1847::margin: 0;
+KEY_1848::1f1f1;\n   
+KEY_1849::BPyAD
+KEY_1850::align-item
+KEY_1851::kiksySetup
+KEY_1852:: break-wor
+KEY_1853::ransition-
+KEY_1854::ify-conten
+KEY_1855::QZkpC_oWk
+KEY_1856::xFBYc
+KEY_1857::DnXEB
+KEY_1858::F;\n       
+KEY_1859::  #closeIf
+KEY_1860::-size: 12p
+KEY_1861::stringify
+KEY_1862::top: 0;\n  
+KEY_1863::        ju
+KEY_1864:: 	width: 3
+KEY_1865::         .
+KEY_1866::         l
+KEY_1867::subscripti
+KEY_1868::, transpar
+KEY_1869::lable
+KEY_1870::       asy
+KEY_1871::"></textar
+KEY_1872::live
+KEY_1873::tion: colu
+KEY_1874::    .chat-
+KEY_1875::       </d
+KEY_1876::image.jpg
+KEY_1877::slideAvata
+KEY_1878::#ccc;\n    
+KEY_1879::setpositio
+KEY_1880::m textarea
+KEY_1881::HVLLR
+KEY_1882::     <div 
+KEY_1883::     #vide
+KEY_1884::     .chat
+KEY_1885::kground-co
+KEY_1886::Ãƒâ€šÃ‚Â¤Ãƒâ€šÃ‚Â¦ÃƒÆ’
+KEY_1887::%);\n      
+KEY_1888::blur(2px);
+KEY_1889::kiksyinpro
+KEY_1890::pPWTD
+KEY_1891::" \n       
+KEY_1892::  gtag("co
+KEY_1893::-align: ce
+KEY_1894::rror {\n   
+KEY_1895::6px - 767p
+KEY_1896::setupFeedb
+KEY_1897::connectedC
+KEY_1898::vatar_webs
+KEY_1899::cEXUl
+KEY_1900::focus
+KEY_1901::ertical;\n 
+KEY_1902::solid #81e
+KEY_1903::rgba(255, 
+KEY_1904::ume-up
+KEY_1905::  \n\n      
+KEY_1906::OuEEY
+KEY_1907::     	font
+KEY_1908::  	#sendBu
+KEY_1909::tional)
+KEY_1910::ain;\n     
+KEY_1911::">\n       
+KEY_1912::on: all 0.
+KEY_1913::iv id="but
+KEY_1914::lay: flex;
+KEY_1915::bottom: 20
+KEY_1916::<a href="$
+KEY_1917::d transpar
+KEY_1918::sGbZJ
+KEY_1919::t type="em
+KEY_1920::in: auto;\n
+KEY_1921::mEIFl
+KEY_1922::play", san
+KEY_1923::   #urlLis
+KEY_1924::       #av
+KEY_1925::kiksyAssis
+KEY_1926::browser
+KEY_1927::up/fd/draw
+KEY_1928::solid #ddd
+KEY_1929::l mobile (
+KEY_1930::pendingFee
+KEY_1931::     #avat
+KEY_1932::.5) !impor
+KEY_1933::in;">\n\n   
+KEY_1934::width: 140
+KEY_1935::rm select:
+KEY_1936::: 16px;\n  
+KEY_1937::ZCAvC
+KEY_1938::: 10px 20p
+KEY_1939::language-c
+KEY_1940::px rgba(0,
+KEY_1941::50px;\n    
+KEY_1942::5px) */\n  
+KEY_1943::255, 255, 
+KEY_1944::map
+KEY_1945::ppercase;\n
+KEY_1946::ZUMoT
+KEY_1947::ontainer" 
+KEY_1948::t" rows="1
+KEY_1949::  	top: 40
+KEY_1950::px rgba(24
+KEY_1951::   top: 10
+KEY_1952::com/ios11/
+KEY_1953::eedback-bu
+KEY_1954::     displ
+KEY_1955::: center;\n
+KEY_1956::HTgDJ
+KEY_1957::area {\n   
+KEY_1958::EKWqY
+KEY_1959:: class="do
+KEY_1960::gleapis.co
+KEY_1961::1);\n      
+KEY_1962::60%;\n     
+KEY_1963::size: 12px
+KEY_1964::15px;\n    
+KEY_1965::unmuted
+KEY_1966::alternativ
+KEY_1967::â˜…</span>\n 
+KEY_1968::à¤ˆà¤®à¥‡à¤² à¤ªà¤¤à¤¾ (
+KEY_1969:: 80vh;\n   
+KEY_1970::EjdgI
+KEY_1971::@media (mi
+KEY_1972::-width: 80
+KEY_1973::showTyping
+KEY_1974::in;\n      
+KEY_1975::ar_talkbtn
+KEY_1976::       	he
+KEY_1977::f: flex-st
+KEY_1978::ound: #fff
+KEY_1979::#buttonare
+KEY_1980::catch
+KEY_1981::openwebpag
+KEY_1982::x);\n      
+KEY_1983::f0;\n      
+KEY_1984::nt-size: 8
+KEY_1985::message
+KEY_1986::ail">\n    
+KEY_1987:: 0.6);\n   
+KEY_1988::ailto:$1">
+KEY_1989::821F;\n    
+KEY_1990::ng: 10px;\n
+KEY_1991::lign: cent
+KEY_1992::nu-buttons
+KEY_1993::     posit
+KEY_1994::stion p {\n
+KEY_1995::26px;\n    
+KEY_1996::key=
+KEY_1997::="fas fa-v
+KEY_1998::70% {\n    
+KEY_1999::0deg);\n   
+KEY_2000::uction {\n 
+KEY_2001::t" href="h
+KEY_2002::ing: 6px 8
+KEY_2003::includes
+KEY_2004::: 4px;\n   
+KEY_2005::YYRCt
+KEY_2006::tyle="posi
+KEY_2007::ox-shadow:
+KEY_2008::height: 1.
+KEY_2009::hi-IN
+KEY_2010::Kiksy
+KEY_2011::t-style: n
+KEY_2012::    	borde
+KEY_2013::Any sugges
+KEY_2014::menu-conta
+KEY_2015::, 0.2);\n  
+KEY_2016::   word-wr
+KEY_2017::0, 0, 0.3)
+KEY_2018::splay: blo
+KEY_2019::available;
+KEY_2020::ton id="Av
+KEY_2021::sessionID
+KEY_2022:: <div id="
+KEY_2023::atar_intro
+KEY_2024::  border-r
+KEY_2025::er (respon
+KEY_2026::1">$1</a>
+KEY_2027::anguage-bu
+KEY_2028::     align
+KEY_2029::DaBKC
+KEY_2030::ating">\n  
+KEY_2031:: button {\n
+KEY_2032::age-header
+KEY_2033::oPlayer {\n
+KEY_2034::GjYDH
+KEY_2035:: #chat-clo
+KEY_2036::id #ffffff
+KEY_2037::geGun
+KEY_2038::th: 92%;\n 
+KEY_2039::       @me
+KEY_2040::DFmGT
+KEY_2041::okMDv
+KEY_2042::"Chat" sty
+KEY_2043::times"></i
+KEY_2044::="arrow-ic
+KEY_2045::eens (1920
+KEY_2046::gn-items: 
+KEY_2047::translateX
+KEY_2048::dback (lik
+KEY_2049::       }\n 
+KEY_2050::deoPlayer 
+KEY_2051::large scre
+KEY_2052::length
+KEY_2053::	transitio
+KEY_2054::       .as
+KEY_2055::     avata
+KEY_2056::eight: 15p
+KEY_2057::     .feed
+KEY_2058::ding: 10px
+KEY_2059::ack;\n     
+KEY_2060::on: popIn 
+KEY_2061::0% {\n     
+KEY_2062::GZFZy
+KEY_2063::</button>\n
+KEY_2064:: margin-ri
+KEY_2065::pointer;\n 
+KEY_2066::      data
+KEY_2067::der-color:
+KEY_2068::0.2);\n    
+KEY_2069::at.png" st
+KEY_2070:: placehold
+KEY_2071::31899010ZKApRT
+KEY_2072::nput butto
+KEY_2073::sition: ab
+KEY_2074:: .dot:nth-
+KEY_2075::itBtn:hove
+KEY_2076::eapis.com/
+KEY_2077::  	box-sha
+KEY_2078::embededvid
+KEY_2079::olute;\n   
+KEY_2080::er-radius:
+KEY_2081::n-top: -3p
+KEY_2082::55%;\n     
+KEY_2083::  		box-sh
+KEY_2084::ack-header
+KEY_2085::tVSQQ
+KEY_2086::         w
+KEY_2087::height: au
+KEY_2088::nts: none;
+KEY_2089::     left:
+KEY_2090::ght: 500;\n
+KEY_2091::100% {\n   
+KEY_2092::-width: 14
+KEY_2093::r;\n       
+KEY_2094::adding: 10
+KEY_2095::family: "R
+KEY_2096::recieveKik
+KEY_2097::40px) {\n  
+KEY_2098::n: relativ
+KEY_2099::ner {\n    
+KEY_2100::umn;"></di
+KEY_2101::tarea
+KEY_2102::><img src=
+KEY_2103::ems: cente
+KEY_2104::ZRAAQ
+KEY_2105::ns">\n     
+KEY_2106::/span>\n\n  
+KEY_2107::IEQbE
+KEY_2108::TScXI
+KEY_2109::n;\n       
+KEY_2110::getUserMed
+KEY_2111:: transitio
+KEY_2112::      word
+KEY_2113::          
+KEY_2114:: display: 
+KEY_2115::chat-conta
+KEY_2116::-text {\n  
+KEY_2117:: 58px;\n   
+KEY_2118::ackBtn:hov
+KEY_2119::-question 
+KEY_2120::     #chat
+KEY_2121::zRXDM
+KEY_2122::join
+KEY_2123::ght: 85px;
+KEY_2124::vAxtI
+KEY_2125::round: lin
+KEY_2126::    transf
+KEY_2127::: 14px;\n  
+KEY_2128::   .feedba
+KEY_2129::eight: 100
+KEY_2130::0 0 5px;\n 
+KEY_2131:: from {\n  
+KEY_2132::      	#av
+KEY_2133::family: in
+KEY_2134::     text-
+KEY_2135::4px 8px rg
+KEY_2136::AIzaSyDMG_
+KEY_2137::0.3);\n    
+KEY_2138::hMQpU
+KEY_2139::RTlou
+KEY_2140::o;\n       
+KEY_2141::: 100%;   
+KEY_2142::-input inp
+KEY_2143::: 10%;\n   
+KEY_2144::avatar_can
+KEY_2145::ansition: 
+KEY_2146::size: 8px;
+KEY_2147::nt(90deg, 
+KEY_2148::bYiWD
+KEY_2149::Failed to 
+KEY_2150::r: 2px sol
+KEY_2151::t: 100%;wi
+KEY_2152::load the m
+KEY_2153::site_loade
+KEY_2154::       tex
+KEY_2155::m/css2?fam
+KEY_2156::    width:
+KEY_2157::0;\n       
+KEY_2158::low: hidde
+KEY_2159::oggle_hide
+KEY_2160::data-ratin
+KEY_2161::ng: 0%;\n  
+KEY_2162::) */\n     
+KEY_2163::tar_stopbt
+KEY_2164::2px);\n    
+KEY_2165::zrtCH
+KEY_2166::olor: #234
+KEY_2167::rating
+KEY_2168::: 0.7;\n   
+KEY_2169::scale(1.1)
+KEY_2170::om: 50px;\n
+KEY_2171::ght: 100px
+KEY_2172::    	posit
+KEY_2173::adius: 8px
+KEY_2174::    cursor
+KEY_2175::      text
+KEY_2176::         f
+KEY_2177::       hei
+KEY_2178::PIdpL
+KEY_2179::reQZW
+KEY_2180::tons {\n   
+KEY_2181::english
+KEY_2182::yjGQF
+KEY_2183::t: 60px;\n 
+KEY_2184::,\n        
+KEY_2185::style
+KEY_2186::    right:
+KEY_2187::       tra
+KEY_2188::/users/get
+KEY_2189::le(1.1);\n 
+KEY_2190::serif;\n   
+KEY_2191::ohVrS
+KEY_2192::index: 100
+KEY_2193::dButton {\n
+KEY_2194::tn i {\n   
+KEY_2195::Avatar_web
+KEY_2196::ault
+KEY_2197::WPcNW
+KEY_2198::Vgpdk
+KEY_2199::rXLRi
+KEY_2200::dSbgW
+KEY_2201::ansform: s
+KEY_2202::ass="feedb
+KEY_2203::CSjhy
+KEY_2204::        <i
+KEY_2205::adding: 15
+KEY_2206::pKRZX
+KEY_2207::ayer img {
+KEY_2208::ck {\n     
+KEY_2209::yWmKn
+KEY_2210::id="avatar
+KEY_2211::g: 0 0 0 6
+KEY_2212::e6ff;\n    
+KEY_2213::: flex;\n  
+KEY_2214::ght: 25px;
+KEY_2215::      #ava
+KEY_2216::ooFnO
+KEY_2217::  	justify
+KEY_2218::rgin: 10px
+KEY_2219::   .chat-i
+KEY_2220::rm {\n     
+KEY_2221::a;\n       
+KEY_2222::Ã‚Â¹ÃƒÆ’ Ãƒâ€šÃ‚Â¤Ãƒ
+KEY_2223::928332mxwSyI
+KEY_2224::ck-contain
+KEY_2225::eight: 14p
+KEY_2226::ng: 7px;\n 
+KEY_2227::op: 1px so
+KEY_2228::KQyQh
+KEY_2229::tline: non
+KEY_2230::aTQGZ
+KEY_2231::        wi
+KEY_2232::-content: 
+KEY_2233::deAvatar {
+KEY_2234::ay:none;">
+KEY_2235::s: 3px;\n  
+KEY_2236::kiksy_fn_T
+KEY_2237::e="display
+KEY_2238::lign-items
+KEY_2239::innerWidth
+KEY_2240::dispatchEv
+KEY_2241::ive {\n    
+KEY_2242::height: 26
+KEY_2243::n: opacity
+KEY_2244::    max-he
+KEY_2245::hite;\n    
+KEY_2246::body {\n   
+KEY_2247::        fo
+KEY_2248::StTDp
+KEY_2249::loading {\n
+KEY_2250::0 2px 4px 
+KEY_2251::ssue):
+KEY_2252::ffa8;\n    
+KEY_2253::KlOTn
+KEY_2254::ophone:
+KEY_2255::  color: w
+KEY_2256::18px;\n    
+KEY_2257::form butto
+KEY_2258:: 0, 0, 0.0
+KEY_2259::up/fd/cam.
+KEY_2260::/button>\n 
+KEY_2261::100;\n     
+KEY_2262::over i {\n 
+KEY_2263::       	0%
+KEY_2264::>à¤¹à¤¿à¤‚à¤¦à¥€</bu
+KEY_2265::e(0.98);\n 
+KEY_2266:: flex-wrap
+KEY_2267::tton {\n   
+KEY_2268::    	displ
+KEY_2269::wght@400;5
+KEY_2270::(max-width
+KEY_2271::vjmPw
+KEY_2272::background
+KEY_2273::g("js", ne
+KEY_2274::language
+KEY_2275::solid #ccc
+KEY_2276::5%;\n      
+KEY_2277::test
+KEY_2278::5, 255, 25
+KEY_2279::value
+KEY_2280::rame id="A
+KEY_2281::  .chatbot
+KEY_2282::UzNKe
+KEY_2283::round-colo
+KEY_2284::radius: 50
+KEY_2285::Hat Displa
+KEY_2286::lay:none">
+KEY_2287::px+) */\n  
+KEY_2288::width: 70p
+KEY_2289::nt;\n      
+KEY_2290::_talkbtn:h
+KEY_2291::translateY
+KEY_2292::nter;\n    
+KEY_2293::trim
+KEY_2294::r: not-all
+KEY_2295::ease;\n    
+KEY_2296::sh" >Engli
+KEY_2297::tainer {\n 
+KEY_2298::ing: 8px 1
+KEY_2299::0);\n      
+KEY_2300::      box-
+KEY_2301::stopbtn {\n
+KEY_2302::className
+KEY_2303::eight: 30p
+KEY_2304::el:$1">$1<
+KEY_2305::gin-bottom
+KEY_2306::ndicator .
+KEY_2307::50%
+KEY_2308::        	d
+KEY_2309::nfig", "G-
+KEY_2310::        op
+KEY_2311::        \n 
+KEY_2312::ortant;\n  
+KEY_2313::yle="flex:
+KEY_2314::ction: col
+KEY_2315::fffff;\n   
+KEY_2316::      	col
+KEY_2317:: 8px; \n   
+KEY_2318::he pulse a
+KEY_2319::parse
+KEY_2320::or: #F5821
+KEY_2321::der
+KEY_2322::	right: 0;
+KEY_2323::tlwjK
+KEY_2324::ognition r
+KEY_2325:: 	bottom: 
+KEY_2326::: 60px;\n  
+KEY_2327:: 	#avatar_
+KEY_2328::atar_busy"
+KEY_2329::top: 10px;
+KEY_2330::5ZCISQn
+KEY_2331::0f0;\n     
+KEY_2332::lor: #ffff
+KEY_2333::: 12px;\n  
+KEY_2334::hideTyping
+KEY_2335::owed;\n    
+KEY_2336::    @keyfr
+KEY_2337::ed {\n     
+KEY_2338::tion: fixe
+KEY_2339::eyframes s
+KEY_2340::h: 1199px)
+KEY_2341::        ri
+KEY_2342::-fit: cove
+KEY_2343::ition: fix
+KEY_2344::HDmIP
+KEY_2345::ack-conten
+KEY_2346::-4px;\n    
+KEY_2347::5396;\n    
+KEY_2348::border: 1p
+KEY_2349::        z-
+KEY_2350::lideAvatar
+KEY_2351::UXimF
+KEY_2352::     	text
+KEY_2353::3|2|0|1|4
+KEY_2354::edback-que
+KEY_2355::iner
+KEY_2356::ius: 3px;\n
+KEY_2357::racting wi
+KEY_2358::Speech rec
+KEY_2359::         <
+KEY_2360::  margin-t
+KEY_2361::te(360deg)
+KEY_2362::r-pod * {\n
+KEY_2363::er > img
+KEY_2364::ainer" sty
+KEY_2365::bUFfz
+KEY_2366::ght: 76px;
+KEY_2367::        ob
+KEY_2368::arrow.png"
+KEY_2369::ail" id="f
+KEY_2370::        	t
+KEY_2371::   font-fa
+KEY_2372::ollbar-tra
+KEY_2373::textarea:a
+KEY_2374::lpoiQ
+KEY_2375:: 48px;\n   
+KEY_2376::th: 991px)
+KEY_2377::ge-header 
+KEY_2378::    	z-ind
+KEY_2379::te;\n      
+KEY_2380::-content {
+KEY_2381::eft: 1%;\n 
+KEY_2382::jdjMc
+KEY_2383::    	trans
+KEY_2384::ansform: u
+KEY_2385::ecorded.
+KEY_2386::eBackBtn {
+KEY_2387::        al
+KEY_2388::VXgDD
+KEY_2389::DAKZS
+KEY_2390::k;\n       
+KEY_2391::tar {\n    
+KEY_2392::  bottom: 
+KEY_2393:: 	width: 6
+KEY_2394::pan>\n     
+KEY_2395::s fadeIn {
+KEY_2396::ext {\n    
+KEY_2397::ur experie
+KEY_2398::d (max-wid
+KEY_2399::div.bottom
+KEY_2400::ointer-eve
+KEY_2401::x;        
+KEY_2402::alk
+KEY_2403::: 15px;\n  
+KEY_2404::cobrowsing
+KEY_2405::der="Enter
+KEY_2406::-wrap: bre
+KEY_2407::  width: 7
+KEY_2408:: * {\n     
+KEY_2409::m: 55px;\n 
+KEY_2410::roler.js
+KEY_2411::ontent {\n 
+KEY_2412::mg.icons8.
+KEY_2413::UCRTz
+KEY_2414::n created:
+KEY_2415::xtarea
+KEY_2416:: 	backgrou
+KEY_2417::und: #0444
+KEY_2418::  	width: 
+KEY_2419::      .iti
+KEY_2420::sive) - ci
+KEY_2421::: translat
+KEY_2422::ft: 0;\n   
+KEY_2423::bottompane
+KEY_2424::      <img
+KEY_2425::t: 60%;\n  
+KEY_2426::MZlEO
+KEY_2427::   	width:
+KEY_2428::2;\n       
+KEY_2429::uccessfull
+KEY_2430::state
+KEY_2431:: \n        
+KEY_2432::white;\n   
+KEY_2433::   backgro
+KEY_2434::â€šÃ‚Â¿ÃƒÆ’ Ãƒâ€šÃ‚Â¤
+KEY_2435::   	font-f
+KEY_2436::;\n        
+KEY_2437::adding: 8p
+KEY_2438::animation:
+KEY_2439:: <span cla
+KEY_2440::age {\n    
+KEY_2441::uto;\n     
+KEY_2442::height: 15
+KEY_2443::jUGWk
+KEY_2444::select:foc
+KEY_2445::ugmke
+KEY_2446::5, 0.2);\n 
+KEY_2447::     }\n   
+KEY_2448::EbLOY
+KEY_2449::ily=Red+Ha
+KEY_2450::No audio r
+KEY_2451::  z-index:
+KEY_2452:: #ff6b6b;\n
+KEY_2453::      righ
+KEY_2454::y", sans-s
+KEY_2455::GkagO
+KEY_2456::ing: 4px 6
+KEY_2457::opacity: 0
+KEY_2458::e: normal;
+KEY_2459::_kiksyLLM
+KEY_2460::justify-co
+KEY_2461::ex: 1000;\n
+KEY_2462::>\n      \n 
+KEY_2463::zvREi
+KEY_2464::#ffffff;\n 
+KEY_2465::2px 4px rg
+KEY_2466::ndscape (7
+KEY_2467::gs {\n     
+KEY_2468::ver {\n    
+KEY_2469::slidable
+KEY_2470::seIframe {
+KEY_2471::tcgcx
+KEY_2472::  color: #
+KEY_2473::0|5|1|6|4|
+KEY_2474::    	box-s
+KEY_2475::dient(90de
+KEY_2476::f inset;\n 
+KEY_2477::luguBtn">à°¤
+KEY_2478::or: pointe
+KEY_2479::order-radi
+KEY_2480::     ::-we
+KEY_2481::poEZZ
+KEY_2482::      padd
+KEY_2483::arent;\n   
+KEY_2484::l 0.2s eas
+KEY_2485::inite ease
+KEY_2486::bToBase64
+KEY_2487::0, 31, 0.3
+KEY_2488::à°²à±? (Optio
+KEY_2489:: 50%;\n    
+KEY_2490::o !importa
+KEY_2491:::hover {\n 
+KEY_2492::uxVhv
+KEY_2493::409a;\n    
+KEY_2494::xspge
+KEY_2495::h3 {\n     
+KEY_2496::   functio
+KEY_2497::        co
+KEY_2498::   display
+KEY_2499::tSxXU
+KEY_2500::dia (max-w
+KEY_2501::_embededvi
+KEY_2502::e;\n       
+KEY_2503::       	ov
+KEY_2504::slateY(0);
+KEY_2505::ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’ 
+KEY_2506:: 8px 8px 8
+KEY_2507::ight: 16px
+KEY_2508::feedbackEm
+KEY_2509::     
+KEY_2510::ius: 10px;
+KEY_2511:: width: 25
+KEY_2512::ent;\n     
+KEY_2513::notifyMute
+KEY_2514::></div>\n\n 
+KEY_2515::idth: 90px
+KEY_2516::juobH
+KEY_2517::  	backgro
+KEY_2518::WRaMc
+KEY_2519::imation */
+KEY_2520::    left: 
+KEY_2521::IyYbG
+KEY_2522::warn
+KEY_2523::ans-serif;
+KEY_2524:: 0, 0, 0.3
+KEY_2525::open
+KEY_2526::     	bott
+KEY_2527::IRLYN
+KEY_2528::feedback-c
+KEY_2529::-index: 1;
+KEY_2530::eft: 50%;\n
+KEY_2531::resetFeedb
+KEY_2532::QpUVz
+KEY_2533::avatar-loa
+KEY_2534::   max-hei
+KEY_2535::ssage
+KEY_2536::langChange
+KEY_2537::YkRnr
+KEY_2538::lay", sans
+KEY_2539::</div><div
+KEY_2540::ar" data-r
+KEY_2541::; }\n      
+KEY_2542::chat
+KEY_2543::0px
+KEY_2544::LqTYa
+KEY_2545::mitBtn {\n 
+KEY_2546::kiksy_stop
+KEY_2547::YH-C-PAAFv
+KEY_2548::h: 767px) 
+KEY_2549::iv>\n      
+KEY_2550::hostname
+KEY_2551:: pulse 1.5
+KEY_2552::qbXxq
+KEY_2553::transform 
+KEY_2554::eY(-2px);\n
+KEY_2555:: 		line-he
+KEY_2556::6px;\n     
+KEY_2557::l">\n      
+KEY_2558::="urlList"
+KEY_2559::ound: #000
+KEY_2560::r_stopbtn"
+KEY_2561::in-height:
+KEY_2562::RmVLN
+KEY_2563::: 5px 6px;
+KEY_2564:: 95px;\n   
+KEY_2565::#e9e9e9;\n 
+KEY_2566::sabled,\n  
+KEY_2567::        bo
+KEY_2568::pSync/user
+KEY_2569::EuSHB
+KEY_2570::utton id="
+KEY_2571::    		box-
+KEY_2572::ar.selecte
+KEY_2573::slateX(-40
+KEY_2574::language-h
+KEY_2575::JZTZO
+KEY_2576::dding: 12p
+KEY_2577::ckTAb
+KEY_2578::"chat-cont
+KEY_2579::voice-repe
+KEY_2580:::placehold
+KEY_2581:: style="\n 
+KEY_2582::à±†à°²à±à°—à±</but
+KEY_2583::shadowRoot
+KEY_2584::ponse.
+KEY_2585::0%;\n      
+KEY_2586::erif;\n    
+KEY_2587::us query!<
+KEY_2588::qfuNL
+KEY_2589::script>\n  
+KEY_2590::ndex: 3;\n 
+KEY_2591::active
+KEY_2592::ea>\n      
+KEY_2593::LSmaG
+KEY_2594::<button id
+KEY_2595::512/delete
+KEY_2596:: Tablet la
+KEY_2597::54px;\n    
+KEY_2598::0 15px rgb
+KEY_2599::c;\n       
+KEY_2600::atbtn
+KEY_2601::uttonarea 
+KEY_2602::ut {\n     
+KEY_2603:: .tag-btn 
+KEY_2604::        /*
+KEY_2605::sOmrm
+KEY_2606::p>Any sugg
+KEY_2607::kiksyLLMke
+KEY_2608::  }\n      
+KEY_2609::text-decor
+KEY_2610::ns button 
+KEY_2611::setvideoPl
+KEY_2612::ild(2) {\n 
+KEY_2613::r: 0.1px s
+KEY_2614::isplay: fl
+KEY_2615::onDetails
+KEY_2616::       but
+KEY_2617::iv id="vid
+KEY_2618::oIjzx
+KEY_2619::keyframes 
+KEY_2620::	text-alig
+KEY_2621::selectedRa
+KEY_2622::overflow
+KEY_2623::    }\n    
+KEY_2624::olor: #F58
+KEY_2625::450px
+KEY_2626::_kiksyToke
+KEY_2627::ntainer" s
+KEY_2628::   	font-w
+KEY_2629::5, 255, 0.
+KEY_2630::) and (min
+KEY_2631::createThre
+KEY_2632::n gtag() {
+KEY_2633::color: rgb
+KEY_2634::      ::-w
+KEY_2635::  .typing-
+KEY_2636::deo
+KEY_2637::div id="me
+KEY_2638::oduction {
+KEY_2639::UcFBu
+KEY_2640::PPuIJ
+KEY_2641::.1);\n     
+KEY_2642::LURDq
+KEY_2643::UOeJa
+KEY_2644:: width: 10
+KEY_2645::_textarea"
+KEY_2646::-family: "
+KEY_2647::r #languag
+KEY_2648::nsition: 0
+KEY_2649::$1</a>
+KEY_2650:: 0%, 80%, 
+KEY_2651::        @k
+KEY_2652::form selec
+KEY_2653::-buttons>b
+KEY_2654::odule:
+KEY_2655::>\n\n       
+KEY_2656::tion {\n   
+KEY_2657::: 50px;\n  
+KEY_2658:: 1px solid
+KEY_2659::lign-self:
+KEY_2660::updateFeed
+KEY_2661::_repeatMod
+KEY_2662::Layer = wi
+KEY_2663::   	box-si
+KEY_2664::    text-a
+KEY_2665::ton:hover 
+KEY_2666::ById
+KEY_2667::Indicator
+KEY_2668::serId=
+KEY_2669:: right: 1p
+KEY_2670::t: 0px;\n  
+KEY_2671::n: none;\n 
+KEY_2672::h: 100%;\n 
+KEY_2673::></span>\n\n
+KEY_2674::-size: 14p
+KEY_2675::n">\n      
+KEY_2676::mousemove
+KEY_2677::* Large sc
+KEY_2678::order: non
+KEY_2679::     z-ind
+KEY_2680::roWnh
+KEY_2681::GUBss
+KEY_2682::NzWdW
+KEY_2683::       opa
+KEY_2684::y: auto;\n 
+KEY_2685::      bott
+KEY_2686::Talk to 
+KEY_2687::ay: flex;\n
+KEY_2688::lumn;\n    
+KEY_2689::0, 0);\n   
+KEY_2690::: 100%;\n  
+KEY_2691::ext-align:
+KEY_2692::a(255, 0, 
+KEY_2693::userID
+KEY_2694::lay:none" 
+KEY_2695::olid #ffff
+KEY_2696::ceholderIm
+KEY_2697::width
+KEY_2698::und: #f0f0
+KEY_2699::VdFEn
+KEY_2700:: flex;\n   
+KEY_2701::ss" />\n\n\n 
+KEY_2702::        pa
+KEY_2703::tyle="disp
+KEY_2704::chat-input
+KEY_2705::3|0|4|5|2|
+KEY_2706::g-indicato
+KEY_2707::sy-message
+KEY_2708::  .assista
+KEY_2709::     #menu
+KEY_2710::{\n        
+KEY_2711::m: transla
+KEY_2712::transform:
+KEY_2713:: #fff;\n   
+KEY_2714::    flex-d
+KEY_2715::cLbIV
+KEY_2716::55, 255, 0
+KEY_2717::t-align: c
+KEY_2718::wHWEv
+KEY_2719::x: 10;\n   
+KEY_2720::assistantI
+KEY_2721::t-close-bt
+KEY_2722::white-spac
+KEY_2723::adius: 5px
+KEY_2724::      disp
+KEY_2725::e-height: 
+KEY_2726::tio
+KEY_2727::     \n    
+KEY_2728::bkit-fill-
+KEY_2729::3606XMTzRi
+KEY_2730::r_talkbtn 
+KEY_2731::sendText
+KEY_2732::nsform: tr
+KEY_2733::submit-kik
+KEY_2734::position: 
+KEY_2735::        	c
+KEY_2736::s"><button
+KEY_2737::i {\n      
+KEY_2738::idth: 1200
+KEY_2739::	font-weig
+KEY_2740::Enter
+KEY_2741::ion: all .
+KEY_2742::e: 9px;\n  
+KEY_2743:: backgroun
+KEY_2744::         d
+KEY_2745::h: 80%;\n  
+KEY_2746::skipBtn
+KEY_2747::chat-form 
+KEY_2748::closeIfram
+KEY_2749::   border:
+KEY_2750::: flex-sta
+KEY_2751::gmlNI
+KEY_2752::SsyFQ
+KEY_2753::-height: 1
+KEY_2754::	}\n       
+KEY_2755:: Hat Displ
+KEY_2756::	border-ra
+KEY_2757:: height: 2
+KEY_2758:::350px;\n  
+KEY_2759::YPqNO
+KEY_2760::stant-mess
+KEY_2761:: opacity: 
+KEY_2762::vatar_stop
+KEY_2763::xxxxxx
+KEY_2764::   <p>Emai
+KEY_2765::repeatMode
+KEY_2766::iwfTF
+KEY_2767::_textarea:
+KEY_2768::500;\n     
+KEY_2769::HVlHj
+KEY_2770::tent: cent
+KEY_2771::w: 0 0 0 0
+KEY_2772::t-form but
+KEY_2773::}\n        
+KEY_2774::keydown
+KEY_2775::       out
+KEY_2776::m: scale(1
+KEY_2777::       	di
+KEY_2778::radius: 10
+KEY_2779::<a href="m
+KEY_2780::eAvatar" s
+KEY_2781::autSm
+KEY_2782::-form butt
+KEY_2783::ursor: aut
+KEY_2784::YAWCr
+KEY_2785::ne;\n      
+KEY_2786::    	margi
+KEY_2787::ute;\n     
+KEY_2788::ntTln
+KEY_2789::  width: 9
+KEY_2790::muted
+KEY_2791::ZIkgg
+KEY_2792::microphone
+KEY_2793::OQrwv
+KEY_2794::e-buttons 
+KEY_2795::: transfor
+KEY_2796::2px solid 
+KEY_2797::split
+KEY_2798::       	10
+KEY_2799:: 8px rgba(
+KEY_2800::key
+KEY_2801::00px) and 
+KEY_2802::ject-fit: 
+KEY_2803:: 	text-ali
+KEY_2804::/a>
+KEY_2805::184px;\n   
+KEY_2806::CVNzf
+KEY_2807::er your em
+KEY_2808::width: 360
+KEY_2809::w: 0 0 3px
+KEY_2810::user-messa
+KEY_2811::typing-mes
+KEY_2812::play: flex
+KEY_2813::à°à°¦à±ˆà°¨à°¾ à°¸à±‚à°šà°¨
+KEY_2814::en-US
+KEY_2815::toggleMute
+KEY_2816::word-wrap:
+KEY_2817:: transform
+KEY_2818::avatar-pod
+KEY_2819::vJUoU
+KEY_2820::tom: 15px;
+KEY_2821::"5">â˜…</spa
+KEY_2822::jfLaJ
+KEY_2823::  	border:
+KEY_2824::ia (max-wi
+KEY_2825::   line-he
+KEY_2826::    font-s
+KEY_2827::left: -250
+KEY_2828:: Ãƒâ€šÃ‚Â¥ÃƒÂ¢Ã¢â‚¬Å¡
+KEY_2829::/div>
+KEY_2830::to Google 
+KEY_2831::       	}\n
+KEY_2832::ent .messa
+KEY_2833::8px;\n     
+KEY_2834::il" placeh
+KEY_2835::rt;\n      
+KEY_2836::iv>\n\n     
+KEY_2837::isplay:non
+KEY_2838::t,\n       
+KEY_2839::sistant-me
+KEY_2840::  font-fam
+KEY_2841::top: -5px;
+KEY_2842::gin-top: -
+KEY_2843::09a;\n     
+KEY_2844::0px - 1919
+KEY_2845:: à°‰à°‚à°¦à°¿?
+KEY_2846:: feedback"
+KEY_2847::IOasE
+KEY_2848::wPWaR
+KEY_2849::tonarea" s
+KEY_2850::eech.googl
+KEY_2851::       gap
+KEY_2852::         c
+KEY_2853::voice-stop
+KEY_2854::irection: 
+KEY_2855::480px - 57
+KEY_2856:: </div>\n  
+KEY_2857::wxWVS
+KEY_2858::seIframe" 
+KEY_2859::yFstY
+KEY_2860:: 2px solid
+KEY_2861::(0, 0, 0, 
+KEY_2862::adow: 0 2p
+KEY_2863::KJTFe
+KEY_2864::</div>\n   
+KEY_2865::AuHdM
+KEY_2866::r:hover,\n 
+KEY_2867::bzmOP
+KEY_2868::!important
+KEY_2869::flow-x: hi
+KEY_2870::fff;\n     
+KEY_2871::ateX(-1%);
+KEY_2872:: 	box-shad
+KEY_2873::rder: none
+KEY_2874::zYPAr
+KEY_2875::header {\n 
+KEY_2876::   text-al
+KEY_2877::stener
+KEY_2878::width: 92%
+KEY_2879::ackForm
+KEY_2880::isMuted
+KEY_2881::      line
+KEY_2882::lWbnZ
+KEY_2883::localhost
+KEY_2884::"star" dat
+KEY_2885::     paddi
+KEY_2886::_avatar
+KEY_2887::     font-
+KEY_2888::acity: 0.8
+KEY_2889::DzATL
+KEY_2890::  border: 
+KEY_2891::align-self
+KEY_2892:: margin-bo
+KEY_2893::      }\n\n 
+KEY_2894::QXGKB
+KEY_2895::attachShad
+KEY_2896::e;"  ></if
+KEY_2897::ames popIn
+KEY_2898::/\n        
+KEY_2899::     flex:
+KEY_2900:: 12px 0 16
+KEY_2901::   	color:
+KEY_2902::tVlrK
+KEY_2903::xGanS
+KEY_2904::ctive {\n  
+KEY_2905::enabledMen
+KEY_2906::        #A
+KEY_2907:: color: #f
+KEY_2908::66Mgjqdv
+KEY_2909::play=swap"
+KEY_2910::FVfSd
+KEY_2911::th: 80%;\n 
+KEY_2912::bottom: da
+KEY_2913::xLzfq
+KEY_2914::uUTMB
+KEY_2915::ent
+KEY_2916::iINiP
+KEY_2917::t button {
+KEY_2918::   gap: 8p
+KEY_2919::div id="co
+KEY_2920::n-top: 8px
+KEY_2921::width: 992
+KEY_2922::font-weigh
+KEY_2923::idth: 50px
+KEY_2924::ite_loader
+KEY_2925::nnmdt
+KEY_2926::ion: color
+KEY_2927::2);\n      
+KEY_2928::lute;heigh
+KEY_2929::n: fixed;\n
+KEY_2930::px) */\n   
+KEY_2931::      	dis
+KEY_2932::  <span id
+KEY_2933::GCIFS
+KEY_2934:: -50%);\n  
+KEY_2935::ormal;\n   
+KEY_2936::et;\n      
+KEY_2937::* Define t
+KEY_2938::yle="\n    
+KEY_2939::  margin-l
+KEY_2940::IqwTx
+KEY_2941::pzeRy
+KEY_2942::-sign.png"
+KEY_2943:: 70%;\n    
+KEY_2944::-in-out;\n 
+KEY_2945::getItem
+KEY_2946::vents: non
+KEY_2947::: space-ev
+KEY_2948::       .st
+KEY_2949::_gptData
+KEY_2950::  	cursor:
+KEY_2951::z-index: 9
+KEY_2952::px 0px #00
+KEY_2953::ting
+KEY_2954::     .lang
+KEY_2955::mxhbd
+KEY_2956::webkit-scr
+KEY_2957::round: #ff
+KEY_2958::        #v
+KEY_2959::    	justi
+KEY_2960::ded: 
+KEY_2961::       .ch
+KEY_2962::utton {\n  
+KEY_2963::(-50%)
+KEY_2964::peatbtn
+KEY_2965::pan>\n\n    
+KEY_2966::#feedbackT
+KEY_2967::   	backgr
+KEY_2968::ported in 
+KEY_2969::body
+KEY_2970::    transi
+KEY_2971::tons butto
+KEY_2972::ax-height:
+KEY_2973::jwMQj
+KEY_2974::    	width
+KEY_2975::box-shadow
+KEY_2976::on:hover {
+KEY_2977::   backdro
+KEY_2978::ex-start;\n
+KEY_2979:: 1000;\n   
+KEY_2980::hadow: 0 0
+KEY_2981::dth: 1920p
+KEY_2982::g: 5px 0;\n
+KEY_2983::    <texta
+KEY_2984::parentElem
+KEY_2985::question
+KEY_2986::Layer.push
+KEY_2987::kText {\n  
+KEY_2988::RhWVM
+KEY_2989::BzxlY
+KEY_2990::   font-we
+KEY_2991::onstop
+KEY_2992::uttons but
+KEY_2993::overall sa
+KEY_2994::      	wor
+KEY_2995::: 1px soli
+KEY_2996::ition: abs
+KEY_2997::er;\n      
+KEY_2998::25px;\n    
+KEY_2999::ation: und
+KEY_3000::this brows
+KEY_3001::-delay: 0s
+KEY_3002::localConfi
+KEY_3003::   color: 
+KEY_3004::bbLXU
+KEY_3005::       wid
+KEY_3006::p-filter: 
+KEY_3007::dButton:ho
+KEY_3008::ht: 41px;\n
+KEY_3009::3428190vVDlnh
+KEY_3010::ttps://cdn
+KEY_3011::00;700&dis
+KEY_3012::  width: 4
+KEY_3013::zing: bord
+KEY_3014::        ga
+KEY_3015::/Kiksy-set
+KEY_3016::faDoG
+KEY_3017::ZcglB
+KEY_3018::ss="fas fa
+KEY_3019::    #chat-
+KEY_3020::     /* Ex
+KEY_3021::estion">\n 
+KEY_3022::tions? (Op
+KEY_3023::#Avatar_in
+KEY_3024::eedback-co
+KEY_3025::ding
+KEY_3026::or: #000;\n
+KEY_3027:: bottom: 2
+KEY_3028::t: 100%;\n 
+KEY_3029::, 0.4);\n  
+KEY_3030::phEMA
+KEY_3031::-size: 20p
+KEY_3032::status
+KEY_3033::-top: -90p
+KEY_3034::/button>\n\n
+KEY_3035::d Hat Disp
+KEY_3036::     </div
+KEY_3037:: }\n       
+KEY_3038::.png" alt=
+KEY_3039::city: 0;\n 
+KEY_3040::NsDVY
+KEY_3041:: }\n\n\n\n    
+KEY_3042::#avatar_ta
+KEY_3043::fffff4a;\n 
+KEY_3044::Controller
+KEY_3045::auto;\n    
+KEY_3046::n {\n      
+KEY_3047::: 50px !im
+KEY_3048::   #avatar
+KEY_3049::our previo
+KEY_3050:: 12px;\n   
+KEY_3051::stify-cont
+KEY_3052::="flex" st
+KEY_3053::avatar
+KEY_3054::<div id="m
+KEY_3055:: .language
+KEY_3056::  gap: 10p
+KEY_3057::px;\n      
+KEY_3058::ed;\n      
+KEY_3059::    }\n\n   
+KEY_3060::width: 768
+KEY_3061::ht: auto;\n
+KEY_3062::2">â˜…</span
+KEY_3063::      	lin
+KEY_3064::ontainer
+KEY_3065::    line-h
+KEY_3066::allback
+KEY_3067::to;\n      
+KEY_3068::       	ba
+KEY_3069::on id="ski
+KEY_3070::      #sen
+KEY_3071::     	alig
+KEY_3072::        #f
+KEY_3073::  @media (
+KEY_3074::    <butto
+KEY_3075::form: tran
+KEY_3076::         t
+KEY_3077::id="Hindi"
+KEY_3078::div id="fe
+KEY_3079::indow.data
+KEY_3080::lay: none;
+KEY_3081::atar_talkb
+KEY_3082::adius: 50%
+KEY_3083::border: no
+KEY_3084::  	display
+KEY_3085::-size: 9px
+KEY_3086::redPulse {
+KEY_3087::-btn:hover
+KEY_3088::sition: re
+KEY_3089:: 0.1);\n   
+KEY_3090::ntId
+KEY_3091::  /* Intro
+KEY_3092::How was yo
+KEY_3093::       		l
+KEY_3094::lly for la
+KEY_3095::RwZNR
+KEY_3096::color: #21
+KEY_3097::Audio
+KEY_3098::       	te
+KEY_3099::nc\n       
+KEY_3100::      back
+KEY_3101:: scale(1.1
+KEY_3102::rm: scale(
+KEY_3103::     opaci
+KEY_3104::-fit:conta
+KEY_3105:: 	display:
+KEY_3106::g: 3px;\n  
+KEY_3107::pmbli
+KEY_3108::padding: 1
+KEY_3109:: valid kik
+KEY_3110::1477586gbxJhD
+KEY_3111:: transpare
+KEY_3112::close-btn 
+KEY_3113::hfidb
+KEY_3114::ttom: 10px
+KEY_3115::edback-hea
+KEY_3116::      font
+KEY_3117::        .c
+KEY_3118::jueLu
+KEY_3119::BGdfJ
+KEY_3120::audioFinis
+KEY_3121::th: 4px;\n 
+KEY_3122::th: 576px)
+KEY_3123::: rotate(0
+KEY_3124::   margin-
+KEY_3125::us,\n      
+KEY_3126::\n         
+KEY_3127::ndReset
+KEY_3128::panel
+KEY_3129::  	text-al
+KEY_3130::   transit
+KEY_3131::s="feedbac
+KEY_3132:: 	position
+KEY_3133::dataset
+KEY_3134::   .langua
+KEY_3135::        	l
+KEY_3136::header #ba
+KEY_3137::ound-color
+KEY_3138::xxx-4xxx-y
+KEY_3139::textarea {
+KEY_3140::play:none;
+KEY_3141::ASR Respon
+KEY_3142::dius: 50%;
+KEY_3143::vlWys
+KEY_3144::     color
+KEY_3145::w: 0 2px 6
+KEY_3146::     <butt
+KEY_3147::  font-wei
+KEY_3148::-radius: 5
+KEY_3149::rgb(255, 0
+KEY_3150::nt-awesome
+KEY_3151::gIMeq
+KEY_3152::sform: sca
+KEY_3153::mily: "Red
+KEY_3154::Error subm
+KEY_3155::   	z-inde
+KEY_3156::rotate(-18
+KEY_3157:: contain;"
+KEY_3158::v class="f
+KEY_3159::       fle
+KEY_3160::"></canvas
+KEY_3161::getAttribu
+KEY_3162::zamFn
+KEY_3163::ight: 65px
+KEY_3164::.googletag
+KEY_3165::define
+KEY_3166::d-color: #
+KEY_3167::orRQh
+KEY_3168::chaCK
+KEY_3169::         a
+KEY_3170::YRkQI
+KEY_3171::      widt
+KEY_3172::word;\n    
+KEY_3173::m: scale(0
+KEY_3174::\n        <
+KEY_3175::6|5|0|7|3|
+KEY_3176::%;\n       
+KEY_3177::FBIXk
+KEY_3178::manager.co
+KEY_3179::      #cha
+KEY_3180:: cursor: p
+KEY_3181::      just
+KEY_3182::reens (992
+KEY_3183::    	backg
+KEY_3184::teY(-2px);
+KEY_3185::ion: bounc
+KEY_3186::content: c
+KEY_3187::     	heig
+KEY_3188::hLrgv
+KEY_3189::0% { trans
+KEY_3190::activeButt
+KEY_3191::x;\n       
+KEY_3192::         o
+KEY_3193::onloadend
+KEY_3194::    .typin
+KEY_3195::idth: 576p
+KEY_3196::cursor: po
+KEY_3197::t: 25px;\n 
+KEY_3198::HHtcs
+KEY_3199::        }\n
+KEY_3200::: none;\n  
+KEY_3201::osition: a
+KEY_3202::gObj
+KEY_3203::JAwlz
+KEY_3204::self
+KEY_3205::backBtn
+KEY_3206::       gta
+KEY_3207::kiksyToken
+KEY_3208::nal)
+KEY_3209::finite;\n  
+KEY_3210::       jus
+KEY_3211::dChat
+KEY_3212::255);\n    
+KEY_3213::       bor
+KEY_3214::top
+KEY_3215::submit-use
+KEY_3216::xtarea {\n 
+KEY_3217::   <div id
+KEY_3218::async
+KEY_3219::ize: 11px;
+KEY_3220::results
+KEY_3221::ASR:
+KEY_3222::  padding:
+KEY_3223::   border-
+KEY_3224::ba(255, 25
+KEY_3225::65px;\n    
+KEY_3226::      <but
+KEY_3227::   @media 
+KEY_3228::IitYG
+KEY_3229::\n        .
+KEY_3230::55, 0.1);\n
+KEY_3231:: large scr
+KEY_3232::        .t
+KEY_3233::ase;      
+KEY_3234::     	just
+KEY_3235::00;\n      
+KEY_3236::       	al
+KEY_3237::hatbot-btn
+KEY_3238::th="720" i
+KEY_3239::    .feedb
+KEY_3240::     	back
+KEY_3241::cEVye
+KEY_3242::put,\n     
+KEY_3243::n-bottom: 
+KEY_3244:: 0px 10px;
+KEY_3245::text-align
+KEY_3246:: 6px 8px;\n
+KEY_3247::: #f5f5f5;
+KEY_3248::llbar {\n  
+KEY_3249::ius: 50%;\n
+KEY_3250::1;\n       
+KEY_3251::(0, 0, 0);
+KEY_3252::an id="ava
+KEY_3253::a {\n      
+KEY_3254::VjkVf
+KEY_3255::city: 1;\n 
+KEY_3256::ffffff;\n  
+KEY_3257::: pointer;
+KEY_3258::or: white;
+KEY_3259::12px;\n    
+KEY_3260::ransform: 
+KEY_3261::form 0.3s 
+KEY_3262::ff;\n      
+KEY_3263::selectedLa
+KEY_3264::flex-direc
+KEY_3265::rtical;\n  
+KEY_3266:: id="backB
+KEY_3267::GIA
+KEY_3268::slice
+KEY_3269::ing: 8px;\n
+KEY_3270::);\n       
+KEY_3271::drQqA
+KEY_3272::addEventLi
+KEY_3273::   #chat-c
+KEY_3274::      #Ava
+KEY_3275::     backg
+KEY_3276::90px;\n    
+KEY_3277::OevZW
+KEY_3278::qCvNO
+KEY_3279::  	left: 5
+KEY_3280::r-message
+KEY_3281::ay: none;\n
+KEY_3282::qBoDS
+KEY_3283::ntent: cen
+KEY_3284::ibLeE
+KEY_3285:: 4px 6px;\n
+KEY_3286::ng: 0 !imp
+KEY_3287::sessionTim
+KEY_3288::    color:
+KEY_3289::ght: 50px;
+KEY_3290:: #arrow {\n
+KEY_3291::aceholder 
+KEY_3292::https://sp
+KEY_3293::ap: break-
+KEY_3294::fit: conta
+KEY_3295::n-self: fl
+KEY_3296::eBackBtn i
+KEY_3297::kground: t
+KEY_3298::WsCsN
+KEY_3299::"https://i
+KEY_3300::troduction
+KEY_3301::   	  opac
+KEY_3302::.star
+KEY_3303::        #m
+KEY_3304:: scale(1);
+KEY_3305::extarea:di
+KEY_3306::important;
+KEY_3307::preventDef
+KEY_3308::    	heigh
+KEY_3309::ge-buttons
+KEY_3310::cript\n    
+KEY_3311::-weight: b
+KEY_3312::buttonarea
+KEY_3313::d-wrap: br
+KEY_3314::        	p
+KEY_3315::dow: 0 4px
+KEY_3316::14px;\n    
+KEY_3317::axyyH
+KEY_3318::button id=
+KEY_3319::      bord
+KEY_3320::user
+KEY_3321::er="Type h
+KEY_3322::   	object
+KEY_3323::play: none
+KEY_3324::ght: 15px;
+KEY_3325::roduction
+KEY_3326::toLowerCas
+KEY_3327::all 0.2s e
+KEY_3328::     	bord
+KEY_3329::      @med
+KEY_3330::i.kiksar.c
+KEY_3331::JzzJp
+KEY_3332::forEach
+KEY_3333::height: 42
+KEY_3334::ssing micr
+KEY_3335::LZCiN
+KEY_3336::dius: 8px;
+KEY_3337::ct,\n      
+KEY_3338::QvdQL
+KEY_3339::ping-indic
+KEY_3340::ail
+KEY_3341::Button">Se
+KEY_3342::width: 80%
+KEY_3343::lative;\n  
+KEY_3344::xtboxarrow
+KEY_3345::5, 0.7);\n 
+KEY_3346::HHpnC
+KEY_3347:: height: a
+KEY_3348::="introPla
+KEY_3349::       fon
+KEY_3350::n-items: c
+KEY_3351::ttons">\n  
+KEY_3352::ent">\n    
+KEY_3353:: flex-dire
+KEY_3354:: 255, 255,
+KEY_3355::ton>\n     
+KEY_3356::f;\n       
+KEY_3357::99999px;\n 
+KEY_3358::back</h3>\n
+KEY_3359::gptData
+KEY_3360::ready
+KEY_3361::   \n      
+KEY_3362::"Red Hat D
+KEY_3363::         b
+KEY_3364::updateChat
+KEY_3365::    #butto
+KEY_3366::      max-
+KEY_3367::lute;\n    
+KEY_3368::js.cloudfl
+KEY_3369::svLeo
+KEY_3370::https://gm
+KEY_3371::ed,\n      
+KEY_3372::ght: 90px;
+KEY_3373::log
+KEY_3374::ion: trans
+KEY_3375::width: 100
+KEY_3376::feedbackTe
+KEY_3377::link
+KEY_3378::NFsIE
+KEY_3379::0.2s ease;
+KEY_3380::getlink
+KEY_3381::lVhMW
+KEY_3382:: width:350
+KEY_3383::email
+KEY_3384::art;\n     
+KEY_3385::-serif;\n  
+KEY_3386::xxxxxxxx-x
+KEY_3387::ize: 14px;
+KEY_3388::der: 1px s
+KEY_3389::tn {\n     
+KEY_3390::a language
+KEY_3391::   		box-s
+KEY_3392::: opacity 
+KEY_3393::NltJA
+KEY_3394::mportant;\n
+KEY_3395::languageBa
+KEY_3396:: 0 0 rgba(
+KEY_3397::line: none
+KEY_3398::loadavatar
+KEY_3399::eilmh
+KEY_3400::oWQtW
+KEY_3401::osition: f
+KEY_3402::   cursor:
+KEY_3403::ent, let m
+KEY_3404::align: cen
+KEY_3405::LBSpZ
+KEY_3406::.language-
+KEY_3407::IRFtK
+KEY_3408:: 77, 77, 0
+KEY_3409::: #fff;\n  
+KEY_3410::  #feedbac
+KEY_3411:: hidden;\n 
+KEY_3412::ldwqe
+KEY_3413::-indicator
+KEY_3414::on: absolu
+KEY_3415::2; display
+---END_EXTRACTION---
