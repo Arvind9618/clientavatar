@@ -1,0 +1,9 @@
+{
+    "tts": "http://localhost:8088/talk",
+    "readaudio": "http://localhost:8088/read-file",
+    "readaudioDelay": 2000,
+    "lengthcheck": "http://localhost:8088/get_chunk",
+    "chat": "http://localhost:8088/get_text",
+    "getlink": "http://localhost:8088/get_link",
+    "gptforAssit": true
+}

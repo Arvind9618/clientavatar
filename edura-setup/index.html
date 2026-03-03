@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Edura Avatar</title>
+    <meta name="description"
+        content="Edura AI Avatar — Interactive lip-sync assistant with real-time speech recognition" />
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Three.js Import Map (ES Modules from CDN) -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+
+    <style>
+        /* ── Reset & Base ────────────────────────────── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* ── Main Layout ────────────────────────────── */
+        .app-container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* ── Avatar Panel (Left/Center — 60%) ────────── */
+        .avatar-panel {
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: radial-gradient(ellipse at center, #1a1a3e 0%, #0f0f1a 70%);
+            overflow: hidden;
+        }
+
+        /* Ambient glow behind avatar */
+        .avatar-panel::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, rgba(79, 70, 229, 0.04) 40%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            animation: glowPulse 6s ease-in-out infinite;
+        }
+
+        @keyframes glowPulse {
+
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.8;
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        /* Avatar wrapper: contains video + 3D canvas overlay */
+        .avatar-wrapper {
+            position: relative;
+            width: 420px;
+            height: 520px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow:
+                0 8px 40px rgba(0, 0, 0, 0.5),
+                0 0 80px rgba(99, 102, 241, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: transparent;
+        }
+
+        /* ── Transparent Video Background ─────────────
+         * The video has a green screen. We use a CSS chroma-key
+         * approach: mix-blend-mode removes the green, and the
+         * dark page background shows through.
+         */
+        .avatar-wrapper video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        /* 3D canvas overlay — sits on top of video */
+        .avatar-canvas-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+        }
+
+        .avatar-canvas-layer canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* Avatar status indicator */
+        .avatar-status {
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            font-size: 12px;
+            color: #aaa;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .avatar-status.visible {
+            opacity: 1;
+        }
+
+        .avatar-status .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #22c55e;
+            animation: statusPulse 2s infinite;
+        }
+
+        .avatar-status.speaking .dot {
+            background: #6366f1;
+        }
+
+        @keyframes statusPulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.4;
+            }
+        }
+
+        /* ── Chat Panel (Right — 40%) ────────────────── */
+        .chat-panel {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            background: rgba(15, 15, 26, 0.95);
+            border-left: 1px solid rgba(255, 255, 255, 0.06);
+            min-width: 340px;
+            max-width: 480px;
+            backdrop-filter: blur(12px);
+        }
+
+        /* Chat Header */
+        .chat-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .chat-header .avatar-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: white;
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+        }
+
+        .chat-header .header-info {
+            flex: 1;
+        }
+
+        .chat-header h2 {
+            font-size: 15px;
+            font-weight: 600;
+            color: #f0f0f0;
+        }
+
+        .chat-header .subtitle {
+            font-size: 11px;
+            color: #22c55e;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 2px;
+        }
+
+        .chat-header .subtitle::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #22c55e;
+            display: inline-block;
+        }
+
+        /* Chat Messages */
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .chat-messages::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .chat-messages::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .chat-messages::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        .msg {
+            max-width: 85%;
+            padding: 12px 16px;
+            border-radius: 14px;
+            font-size: 14px;
+            line-height: 1.55;
+            animation: msgFadeIn 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            word-wrap: break-word;
+        }
+
+        @keyframes msgFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .msg.user {
+            align-self: flex-end;
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            color: white;
+            border-bottom-right-radius: 4px;
+            box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
+        }
+
+        .msg.assistant {
+            align-self: flex-start;
+            background: rgba(255, 255, 255, 0.06);
+            color: #e0e0e0;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-bottom-left-radius: 4px;
+        }
+
+        .msg.assistant a {
+            color: #818cf8;
+            text-decoration: none;
+        }
+
+        .msg.assistant a:hover {
+            text-decoration: underline;
+        }
+
+        .typing-indicator {
+            opacity: 0.5 !important;
+            animation: tPulse 1.5s infinite !important;
+        }
+
+        @keyframes tPulse {
+
+            0%,
+            100% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        /* Chat Input Area */
+        .chat-input-area {
+            padding: 16px 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .chat-input-area textarea {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 10px 14px;
+            color: #f0f0f0;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            resize: none;
+            outline: none;
+            line-height: 1.4;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .chat-input-area textarea::placeholder {
+            color: #555;
+        }
+
+        .chat-input-area textarea:focus {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+
+        /* Buttons */
+        .btn-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .btn-mic {
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            color: white;
+            box-shadow: 0 2px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-mic:hover {
+            transform: scale(1.08);
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-mic.listening {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            box-shadow: 0 2px 12px rgba(239, 68, 68, 0.4);
+            animation: micPulse 1.5s infinite;
+        }
+
+        @keyframes micPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5);
+            }
+
+            70% {
+                box-shadow: 0 0 0 16px rgba(239, 68, 68, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+            }
+        }
+
+        .btn-send {
+            background: rgba(99, 102, 241, 0.15);
+            color: #818cf8;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .btn-send:hover {
+            background: rgba(99, 102, 241, 0.25);
+            transform: scale(1.05);
+        }
+
+        .btn-stop {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            display: none;
+        }
+
+        .btn-stop:hover {
+            background: rgba(239, 68, 68, 0.25);
+        }
+
+        .btn-mute {
+            background: rgba(255, 255, 255, 0.06);
+            color: #888;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .btn-mute:hover {
+            color: #e0e0e0;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-mute.muted {
+            color: #f87171;
+        }
+
+        /* Welcome message */
+        .welcome-msg {
+            text-align: center;
+            color: #555;
+            font-size: 13px;
+            padding: 40px 20px;
+            line-height: 1.7;
+        }
+
+        .welcome-msg .icon-wrap {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 16px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(79, 70, 229, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .welcome-msg .icon-wrap i {
+            font-size: 24px;
+            color: #6366f1;
+        }
+
+        .welcome-msg p {
+            color: #888;
+            max-width: 260px;
+            margin: 0 auto;
+        }
+
+        /* ── Mobile ──────────────────────────────────── */
+        @media (max-width: 768px) {
+            .app-container {
+                flex-direction: column;
+            }
+
+            .avatar-panel {
+                flex: none;
+                height: 45vh;
+            }
+
+            .avatar-wrapper {
+                width: 280px;
+                height: 350px;
+            }
+
+            .chat-panel {
+                flex: 1;
+                max-width: none;
+                min-width: auto;
+            }
+        }
+
+        /* Debug Overlay */
+        #debugOverlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #00ff00;
+            font-family: monospace;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            z-index: 1000;
+            pointer-events: none;
+            display: none;
+            /* Hide by default */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="debugOverlay">Engine: Loading...</div>
+    <div class="app-container">
+
+        <!-- ── Avatar Panel (Video + 3D Canvas) ────── -->
+        <div class="avatar-panel">
+            <div class="avatar-wrapper">
+                <!-- Loop video (green screen removed via CSS chroma-key) -->
+                <video id="avatarVideo" crossorigin="anonymous" muted playsinline preload="auto" loop>
+                    <source src="./avatars/test-video.mp4" type="video/mp4">
+                </video>
+
+                <!-- 3D mouth overlay canvas -->
+                <div class="avatar-canvas-layer">
+                    <canvas id="avatar_canvas" width="720" height="1280"></canvas>
+                </div>
+
+                <!-- Status badge -->
+                <div class="avatar-status visible" id="avatarStatus">
+                    <span class="dot"></span>
+                    <span id="statusText">Ready</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Chat Panel ──────────────────────────── -->
+        <div class="chat-panel">
+            <div class="chat-header">
+                <div class="avatar-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="header-info">
+                    <h2>GIA Assistant</h2>
+                    <span class="subtitle">Online</span>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-msg">
+                    <div class="icon-wrap">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <p>Type a message or click the mic to start talking with GIA.</p>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <button class="btn-icon btn-mute" id="muteBtn" title="Toggle mute">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="btn-icon btn-mic" id="micBtn" title="Speak">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <textarea id="chatInput" placeholder="Type a message..." rows="1"></textarea>
+                <button class="btn-icon btn-send" id="sendBtn" title="Send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <button class="btn-icon btn-stop" id="stopBtn" title="Stop speaking">
+                    <i class="fas fa-stop"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- API Delay Interceptor -->
+    <script src="./scripts/api-delay.js"></script>
+
+    <!-- MediaPipe Face Mesh (from CDN — matches working simple_lipsync) -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+
+    <!-- Lip-Sync Engine (ES Module — Three.js + GLB + TTS) -->
+    <script type="module">
+        import { LipSyncRenderer } from './scripts/lip-sync-renderer.js';
+        import { TTSPipeline } from './scripts/tts-pipeline.js';
+
+        // ── Initialize Engine ────────────────────────
+        const canvas = document.getElementById('avatar_canvas');
+        const video = document.getElementById('avatarVideo');
+        const statusEl = document.getElementById('avatarStatus');
+        const statusText = document.getElementById('statusText');
+
+        function setStatus(text, speaking = false) {
+            statusText.textContent = text;
+            statusEl.classList.toggle('speaking', speaking);
+        }
+
+        // Load position config
+        let positionConfig = {};
+        try {
+            const res = await fetch('./avatars/position.json');
+            positionConfig = await res.json();
+        } catch (e) {
+            positionConfig = {
+                positionX: 0.03, positionY: -0.85, scale: 0.15,
+                idlestartTime: 0, idleendTime: 12.09,
+                talkingstartTime: 0, talkingendTime: 12.09,
+                voiceID: 'indian_f'
+            };
+        }
+
+        // Start video playback on first interaction
+        let videoStarted = false;
+        function startVideo() {
+            if (videoStarted) return;
+            video.currentTime = positionConfig.idlestartTime || 0;
+            video.play().then(() => {
+                videoStarted = true;
+                console.log('[Engine] Video started');
+            }).catch(e => console.warn('[Engine] Autoplay blocked:', e.message));
+        }
+
+        // Auto-start attempts
+        document.addEventListener('click', startVideo, { once: false });
+        document.addEventListener('mousemove', startVideo, { once: true });
+        document.addEventListener('touchstart', startVideo, { once: true });
+        startVideo();
+
+        // Loop within segment
+        video.addEventListener('timeupdate', () => {
+            const end = positionConfig.idleendTime || 12.09;
+            const start = positionConfig.idlestartTime || 0;
+            if (video.currentTime >= end) video.currentTime = start;
+        });
+
+        // ── Initialize Three.js Renderer ─────────────
+        const renderer = new LipSyncRenderer(canvas, video, '.');
+        await renderer.init();
+        renderer.startRendering();
+        console.log('[Engine] 3D renderer initialized and rendering');
+
+        // ── Initialize TTS Pipeline ──────────────────
+        const tts = new TTSPipeline('.');
+        await tts.init();
+
+        tts.onVisemeChange = (viseme) => renderer.setViseme(viseme);
+        tts.onSpeechStart = () => {
+            console.log('[Engine] Speech started');
+            setStatus('Speaking...', true);
+        };
+        tts.onSpeechEnd = () => {
+            console.log('[Engine] Speech ended');
+            setStatus('Ready', false);
+            document.getElementById('stopBtn').style.display = 'none';
+            document.getElementById('micBtn').style.display = 'flex';
+            document.dispatchEvent(new CustomEvent('audioFinished'));
+        };
+
+        // ── Expose global kiksyObj ───────────────────
+        window.kiksyObj = {
+            renderer,
+            tts,
+            kiksy_fn_Talk: async (text) => {
+                const sid = localStorage.getItem('gmr_session_id');
+                if (sid) tts.setSessionID(sid);
+                await tts.speak(text);
+            },
+            notifyStop: () => tts.stop(),
+            toggleMute: () => {
+                const muted = tts.toggleMute();
+                const btn = document.getElementById('muteBtn');
+                btn.classList.toggle('muted', muted);
+                btn.querySelector('i').className = muted ? 'fas fa-volume-mute' : 'fas fa-volume-up';
+            },
+            setSize: (s) => renderer.setScale(s),
+            loadavatar: () => { },
+            setvideoPlay: () => startVideo(),
+            setposition: () => { },
+            language: 'en-US'
+        };
+
+        console.log('[Engine] ✅ Edura engine ready');
+        setStatus('Ready');
+
+        // Debug Updater
+        const debugOverlay = document.getElementById('debugOverlay');
+        const updateDebug = () => {
+            if (!renderer || !tts) return;
+            const vis = renderer.targetViseme || 'X';
+            const meshes = renderer.faceMeshes ? renderer.faceMeshes.length : 0;
+            const morphs = renderer.morphTargetMap ? Object.keys(renderer.morphTargetMap).length : 0;
+            debugOverlay.innerHTML = `
+                Viseme: ${vis}<br>
+                Meshes: ${meshes}<br>
+                Morphs Mapped: ${morphs}<br>
+                Render: ${renderer.isRendering ? 'ON' : 'OFF'}<br>
+                Video: ${video.currentTime.toFixed(2)}s / ${video.readyState}<br>
+                TTS Playing: ${tts.isPlaying}<br>
+            `;
+            requestAnimationFrame(updateDebug);
+        };
+        // Show debug if URL has ?debug
+        if (window.location.search.includes('debug')) {
+            debugOverlay.style.display = 'block';
+            updateDebug();
+        }
+    </script>
+
+    <!-- ── Chat + Mic Logic ──────────────────────── -->
+    <script>
+        (function () {
+            'use strict';
+
+            let CONFIG = null;
+            const ASSISTANT_ID = '2';
+
+            // Load config
+            fetch('./config/config.json')
+                .then(r => r.json())
+                .then(cfg => { CONFIG = cfg; console.log('[Chat] Config loaded'); })
+                .catch(err => console.error('[Chat] Config failed:', err));
+
+            // ── Helpers ─────────────────────────────────
+            function getUserId() {
+                let uid = localStorage.getItem('gmr_user_id');
+                if (!uid) { uid = Math.floor(1000000 + Math.random() * 9000000).toString(); localStorage.setItem('gmr_user_id', uid); }
+                return uid;
+            }
+
+            function getSessionId() {
+                let sid = localStorage.getItem('gmr_session_id');
+                if (!sid) { sid = Date.now().toString(); localStorage.setItem('gmr_session_id', sid); }
+                return sid;
+            }
+
+            const chatMessages = document.getElementById('chatMessages');
+            const chatInput = document.getElementById('chatInput');
+            const sendBtn = document.getElementById('sendBtn');
+            const micBtn = document.getElementById('micBtn');
+            const stopBtn = document.getElementById('stopBtn');
+            const muteBtn = document.getElementById('muteBtn');
+
+            function addMessage(role, text) {
+                const welcome = chatMessages.querySelector('.welcome-msg');
+                if (welcome) welcome.remove();
+
+                const div = document.createElement('div');
+                div.className = 'msg ' + role;
+                div.textContent = text;
+                chatMessages.appendChild(div);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            function showTyping() {
+                hideTyping();
+                const div = document.createElement('div');
+                div.className = 'msg assistant typing-indicator';
+                div.textContent = 'Thinking...';
+                chatMessages.appendChild(div);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            function hideTyping() {
+                const t = chatMessages.querySelector('.typing-indicator');
+                if (t) t.remove();
+            }
+
+            // ── Chat API ────────────────────────────────
+            async function callChatAPI(text) {
+                if (!CONFIG || !CONFIG.chat) return null;
+
+                const sessionId = getSessionId();
+                const payload = {
+                    query: text,
+                    userID: parseInt(getUserId()),
+                    sessionID: parseInt(sessionId),
+                    assistant_id: ASSISTANT_ID
+                };
+
+                console.log('[Chat] POST /get_text:', JSON.stringify(payload));
+                console.log('[Chat] Session ID for TTS sync:', sessionId);
+
+                try {
+                    const res = await fetch(CONFIG.chat, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!res.ok) throw new Error('Status ' + res.status);
+                    return await res.json();
+                } catch (err) {
+                    console.error('[Chat] API error:', err);
+                    return null;
+                }
+            }
+
+            // ── Process User Input ──────────────────────
+            async function processUserInput(text) {
+                if (!text.trim()) return;
+
+                addMessage('user', text);
+                showTyping();
+
+                const response = await callChatAPI(text);
+                hideTyping();
+
+                if (!response) {
+                    addMessage('assistant', 'Sorry, I couldn\'t process that. Please try again.');
+                    return;
+                }
+
+                console.log('[Chat] Full /get_text response:', JSON.stringify(response));
+
+                // Extract AI response text
+                let responseText = '';
+                if (typeof response === 'string') {
+                    responseText = response;
+                } else if (response.generated_text) {
+                    responseText = response.generated_text;
+                } else if (response.reply) {
+                    responseText = response.reply;
+                } else if (response.response) {
+                    responseText = response.response;
+                } else if (response.message) {
+                    responseText = response.message;
+                } else if (response.answer) {
+                    responseText = response.answer;
+                } else {
+                    responseText = JSON.stringify(response);
+                }
+
+                console.log('[Chat] AI response:', responseText);
+                addMessage('assistant', responseText);
+
+                // /get_text already starts TTS processing — use its ID to poll audio
+                const ttsSessionId = response.ID || getSessionId();
+                console.log('[Chat] TTS session ID from response:', ttsSessionId);
+
+                if (window.kiksyObj && window.kiksyObj.tts) {
+                    stopBtn.style.display = 'flex';
+                    micBtn.style.display = 'none';
+
+                    const tts = window.kiksyObj.tts;
+                    tts.setSessionID(ttsSessionId);
+
+                    // Skip /talk — go directly to polling /get_chunk → /read-file
+                    tts.speakFromChunks(ttsSessionId);
+                }
+            }
+
+            // ── Send Button ─────────────────────────────
+            sendBtn.addEventListener('click', () => {
+                const text = chatInput.value.trim();
+                if (text) { processUserInput(text); chatInput.value = ''; }
+            });
+
+            chatInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    const text = chatInput.value.trim();
+                    if (text) { processUserInput(text); chatInput.value = ''; }
+                }
+            });
+
+            // ── Stop Button ─────────────────────────────
+            stopBtn.addEventListener('click', () => {
+                if (window.kiksyObj) kiksyObj.notifyStop();
+                stopBtn.style.display = 'none';
+                micBtn.style.display = 'flex';
+            });
+
+            // ── Mute Button ─────────────────────────────
+            muteBtn.addEventListener('click', () => {
+                if (window.kiksyObj) kiksyObj.toggleMute();
+            });
+
+            // ── Mic → Web Speech API ────────────────────
+            let recognition = null;
+            let isListening = false;
+
+            function initSpeech() {
+                const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+                if (!SR) { alert('Speech not supported. Use Chrome or Edge.'); return null; }
+
+                const r = new SR();
+                r.continuous = false;
+                r.interimResults = false;
+                r.lang = 'en-US';
+
+                r.onresult = (e) => {
+                    const text = e.results[0][0].transcript;
+                    console.log('[Mic] Heard:', text);
+                    processUserInput(text);
+                };
+
+                r.onerror = (e) => {
+                    console.error('[Mic] Error:', e.error);
+                    isListening = false;
+                    micBtn.classList.remove('listening');
+                };
+
+                r.onend = () => { isListening = false; micBtn.classList.remove('listening'); };
+                r.onstart = () => { isListening = true; micBtn.classList.add('listening'); };
+
+                return r;
+            }
+
+            micBtn.addEventListener('click', () => {
+                if (!recognition) recognition = initSpeech();
+                if (!recognition) return;
+
+                if (isListening) {
+                    recognition.stop();
+                } else {
+                    try { recognition.start(); } catch (e) {
+                        recognition.abort();
+                        setTimeout(() => { try { recognition.start(); } catch (e2) { } }, 100);
+                    }
+                }
+            });
+
+            // Re-show mic on audio finish
+            document.addEventListener('audioFinished', () => {
+                stopBtn.style.display = 'none';
+                micBtn.style.display = 'flex';
+            });
+
+            console.log('[Chat] ✅ Chat pipeline ready');
+        })();
+    </script>
+
+</body>
+
+</html>
